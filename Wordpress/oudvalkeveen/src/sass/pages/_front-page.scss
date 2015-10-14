@@ -1,0 +1,429 @@
+body.home {
+
+	.wifi {
+		background: url('../img/wifi.png') no-repeat;
+		background-size: contain;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+	}
+
+	#content {
+
+		.socialmedia {
+			@media (min-width: $screen-md){
+				margin-top: 35px;
+			}
+
+			p {
+				display: block !important;
+				float: none !important;
+			}
+		}
+
+
+		.call-to-action {
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.vc_row.wpb_row.vc_row-fluid.trapezoid.light-blue {
+
+			@media (min-width: $screen-sm) and (max-width: $screen-md-min){
+				.home-txt {
+					font-size: 10px;
+				}
+			}
+
+			.vc_custom_heading {
+				@media (min-width: $screen-md){
+					margin-top: 60px;
+				}
+
+				@media (max-width: $screen-sm-min){
+					h2 {
+						margin-top: 2rem;
+					}
+				}
+				@media (min-width: $screen-sm){
+					h2 {
+						margin-top: 0;
+					}
+				}
+			}
+
+			h2 {
+				  font-family: Dosis!important;
+			}
+
+			.trapezoid-content {
+
+				.home-trapezoid-img img {
+					display: block;
+					max-height: 100%;
+				}
+			}
+		}
+
+		.youtube-container {
+			background: url('../img/bg-tv.png');
+			background-size: contain;
+			width: auto;
+			background-repeat: no-repeat;
+			//padding: 23px 95px 98px 30px;
+  			display: inline-block;
+  			margin:100px auto 0 auto;
+  			//max-width: 100%;
+  			iframe {
+  				max-width: 100%;
+  			}
+  			@media (max-width: $screen-xs-min) {
+  				//background: transparent;
+  				margin-top: 50px;
+  				padding: 0;
+  			}
+		}
+
+		.twitter {
+			h2 {
+				float: left;
+				background: url('../img/twitter.png') top left no-repeat;
+				padding: 0 0 0 40px;
+				min-height: 24px;
+				margin: 0 0 0 10px;
+			}
+			blockquote {
+				color: white;
+				font-weight: 700;
+				margin-top: 3px;
+				border-left: none;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				font-size: 13px;
+				//height: 32px;
+				padding:0;
+			}
+		}
+
+
+		.socialmedia {
+			p {
+				display: inline;
+				float: left;
+				margin: 4px 5px 0 0;
+			}
+			a {
+				display:inline-block;
+			}
+			a.twitter-icon {
+				background: url('../img/twitter.png') top left no-repeat;
+
+				height: 24px;
+				width: 24px;
+				margin: 0 5px 0 0;
+			}
+			a.facebook-icon {
+				background: url('../img/facebook.png') top left no-repeat;
+				height: 24px;
+				width: 24px;
+			}
+			a.youtube-icon {
+				background: url('../img/youtube24px.png') top left no-repeat;
+				height: 24px;
+				width: 25px;
+			}
+		}
+
+		.custom-review {
+			position:relative;
+			overflow: visible;
+			margin: 50px auto;
+			max-width: 430px;
+			.review-img {
+				background-color: $white;
+				padding: 15px;
+				max-width: 350px;
+				width:65%;
+				-ms-transform: rotate(-5deg); /* IE 9 */
+				-webkit-transform: rotate(-5deg); /* Safari */
+				transform: rotate(-5deg);
+
+				img {
+					width: 100%;
+					height:auto;
+				}
+			}
+			a.custom-well {
+				display: block;
+				z-index: 100;
+			}
+			.review-excerpt {
+				text-decoration: none!important;
+				position:absolute;
+				left: 0px;
+				right: -15px;
+				padding: 20px 30px;
+				background-size: cover;
+
+				.heading {
+					font-family: 'Cubano';
+					font-size: 18px;
+					color: $brown;
+				}
+
+				p {
+					margin: 10px 0;
+					color: #333;
+				}
+
+				.footer{
+					font-family: 'Cubano';
+					font-size: 18px;
+					color: $brown;
+					text-align: right;
+				}
+
+				@media (min-width: $screen-sm){
+					//min-height: 300px;
+					background-size: contain;
+				}
+			}
+
+			.review-title {
+				position: absolute;
+				z-index: 0;
+				right: 1px;
+				width: 115px;
+				top: 10px;
+				color: $white;
+				font-size: 2.4rem;
+				line-height: 3.4rem;
+				text-transform: uppercase;
+				font-family: 'Cubano';
+				text-shadow: 5px 8px 6px rgba(0,0,0,0.25);
+			}
+
+			@media (min-width: $screen-sm) and (max-width:$screen-md) {
+				margin-bottom: 160px;
+
+				.review-img{
+					background-color: $white;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+
+				.review-excerpt {
+					font-size: 12px;
+					left: 20px;
+					right: -15px;
+				}
+
+				.review-title {
+					position: absolute;
+					z-index: 0;
+					right: -10px;
+					width: 100px;
+					top: 10px;
+					font-size: 2.4rem;
+				}
+			}
+			@media (max-width: $screen-xs-min) {
+
+				.review-excerpt {
+					padding: 5px 30px 5px 15px;
+					.heading, .footer {
+						font-size: 14px;
+					}
+
+					p {
+						margin: 0;
+						font-size: 10px;
+					}
+				}
+
+				.review-title {
+					width: 75px;
+					font-size: 1.6rem;
+					top: 0;
+					text-align: right;
+				}
+			}
+		}
+		.nieuwsbrief-container {
+			width: 100%;
+			height: auto;
+			background: url(../img/bg-newsletter.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: auto;
+			display:inline-block;
+			padding: 5px 15px 30px 40px;
+			.ginput_container {
+				max-width: 125px;
+				margin-top: 5px;
+			}
+			@media (max-width: 450px)
+			{
+				margin-top: 30px;
+				padding: 1px 18px 8px 34px;
+				.ginput_container {
+					margin-top: 14px!important;
+				}
+			}
+
+			.nieuwsbrief-titel {
+				margin: 0;
+				color: #fff;
+				margin-right: 6px;
+			}
+
+			.gform_wrapper {
+				margin:0;
+			}
+
+			#gform_submit_button_2 {
+				float: right;
+				margin-right: 3px;
+				padding: 5px 10px;
+			}
+
+		}
+		.weather-container {
+			height: 200px;
+
+			.weather {
+				width: 235px;
+				height: 196px;
+				padding-right: 42px;
+				background: transparent url('../img/bg-weather.png') top left no-repeat;
+				width: 300px;
+				padding-top: 30px;
+
+				@media (min-width: $screen-sm){
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+
+				@media (max-width: $screen-sm-min) {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+
+				h2 {
+					font-family: 'Dosis';
+					font-weight: bold;
+					color: #1769a7;
+					font-size: 22px;
+					text-align: center;
+
+					/* desktop */
+					@media (min-width: $screen-sm){
+						margin-top: 10px;
+						padding-left: 20px;
+					}
+
+					/* mobile */
+					@media (max-width: $screen-sm-min) {
+						position: absolute;
+						top: 10px;
+						left: 50px;
+					}
+
+				}
+				.forecast {
+					width: 240px;
+					line-height: 6rem;
+
+					/* desktop */
+					@media (min-width: $screen-sm){
+						margin-left: 100px;
+					}
+
+					/* mobile */
+					@media (max-width: $screen-sm-min) {
+						position: absolute;
+						left: 100px;
+						top: 70px;
+					}
+
+					.high {
+						font-family: 'Dosis';
+						font-weight: bold;
+						font-size: 55px;
+						color :#000;
+					}
+
+				}
+			}
+		}
+		.ideeen {
+			margin-top: -40px;
+			@media (max-width: $screen-sm) {
+				margin-top: 10px;
+			}
+			display:inline-block;
+			width: 165px;
+			height: 153px;
+			background: url(../img/brievenbus.png);
+			&:hover{
+			background: url(../img/brievenbus_hover.png);
+			}
+			background-size:contain;
+			background-repeat: no-repeat;
+		}
+
+		@media (max-width: $screen-sm-min) {
+
+			.frontpage-contact {
+				color: white;
+
+				a {
+					text-decoration: none;
+					color: white;
+				}
+			}
+
+			.spacing {
+				margin-bottom: 300px;
+			}
+		}
+
+		@media (min-width: $screen-sm) {
+
+			.frontpage-contact {
+				color: #ac4c02;
+				font-weight: bold;
+
+				a {
+					text-decoration: none;
+					color: #ac4c02;
+					font-weight: bold;
+				}
+			}
+
+			.spacing {
+				margin-bottom: 100px;
+			}
+		}
+
+		#gform_2 {
+			.gform_footer  {
+				margin: 0;
+				padding-top: 4px;
+			}
+		}
+
+		.grote-afbeelding-container {
+			position: relative;
+
+			.weather-container {
+
+			}
+		}
+
+	}
+}

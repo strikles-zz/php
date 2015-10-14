@@ -1,0 +1,120 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+body.default {
+  padding: 60px 0;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, label, legend, .btn {
+  text-transform: uppercase;
+}
+
+button {
+  background-color: transparent;
+}
+
+#logo-container {
+  height: 50px;
+  width: 150px;
+  padding: 5px 20px;
+  display:block;
+  background: $rood;
+  margin-right: 50px;
+
+  > div {
+    height: 100%;
+    width: 100%;
+    background: url('../img/alda-large.png') no-repeat;
+    background-size: contain;
+  }
+}
+
+#nav-main {
+  border-bottom: 5px solid $rood;
+  background: $zwart;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  &.navbar-inverse .navbar-nav > .active {
+    > a, > a:hover > a:focus {
+      background: $rood;
+    }
+  }
+
+  .dropdown-menu > .active {
+    > a, > a:hover, > a:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      background-color: $rood;
+    }
+  }
+}
+
+.iframe-header, .ajax-header {
+  margin: 0;
+  background: $donkergrijs;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $zwart;
+    //margin-bottom: 20px;
+
+    h3 {
+      margin:0;
+      color: $wit;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 20px;
+    }
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .ajax-content, body.iframe, iframe {
+    background: $lichtgrijs;
+  }
+
+
+/* COLORBOX */
+#cboxContent {
+    background: rgba(255, 255, 255, 0); //$wit;
+}
+
+#cboxLoadedContent {
+    background: rgba(255, 255, 255, 0); //$wit;
+
+    .ajax-content {
+        height: 100%;
+    }
+}
+
+/* RELATED MODEL */
+
+.related-models-container {
+	font-family: 'Roboto', sans-serif;
+
+	legend {
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	a.btn.ajax {
+		margin-top:0.2rem;
+		margin-bottom: 1rem;
+	}
+}
+
+/* BADGES */
+.badge {
+	margin-top: 5px;
+	vertical-align: top;
+	line-height: 13px;
+	margin-left: 5px;
+}

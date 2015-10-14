@@ -1,0 +1,498 @@
+<?php
+
+class EventTicketsSoldTableSeeder extends Seeder {
+
+	/**
+	 * Auto generated seed file
+	 *
+	 * @return void
+	 */
+	public function run()
+	{
+		\DB::table('event_tickets_sold')->delete();
+        
+		\DB::table('event_tickets_sold')->insert(array (
+			0 => 
+			array (
+				'id' => 276,
+				'num_sold' => 4,
+				'week' => 12,
+				'event_ticket_types_id' => 17,
+				'created_at' => '2015-04-14 14:41:48',
+				'updated_at' => '2015-04-14 14:41:48',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-16',
+			),
+			1 => 
+			array (
+				'id' => 277,
+				'num_sold' => 5,
+				'week' => 15,
+				'event_ticket_types_id' => 16,
+				'created_at' => '2015-04-14 14:41:52',
+				'updated_at' => '2015-04-14 14:41:52',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-06',
+			),
+			2 => 
+			array (
+				'id' => 278,
+				'num_sold' => 1,
+				'week' => 12,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-14 15:17:34',
+				'updated_at' => '2015-04-14 15:17:34',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-16',
+			),
+			3 => 
+			array (
+				'id' => 279,
+				'num_sold' => 3,
+				'week' => 9,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-14 15:25:44',
+				'updated_at' => '2015-04-14 15:25:44',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-02-23',
+			),
+			4 => 
+			array (
+				'id' => 280,
+				'num_sold' => 2,
+				'week' => 9,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-14 15:26:10',
+				'updated_at' => '2015-04-14 15:26:10',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-02-23',
+			),
+			5 => 
+			array (
+				'id' => 281,
+				'num_sold' => 2,
+				'week' => 10,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-14 15:27:05',
+				'updated_at' => '2015-04-14 15:27:05',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-02',
+			),
+			6 => 
+			array (
+				'id' => 282,
+				'num_sold' => 3,
+				'week' => 10,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-14 15:31:02',
+				'updated_at' => '2015-04-14 15:31:02',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-02',
+			),
+			7 => 
+			array (
+				'id' => 283,
+				'num_sold' => 2,
+				'week' => 11,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-14 15:32:53',
+				'updated_at' => '2015-04-14 15:32:53',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-09',
+			),
+			8 => 
+			array (
+				'id' => 284,
+				'num_sold' => 3,
+				'week' => 11,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-14 15:34:01',
+				'updated_at' => '2015-04-14 15:34:01',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-09',
+			),
+			9 => 
+			array (
+				'id' => 285,
+				'num_sold' => 3,
+				'week' => 44,
+				'event_ticket_types_id' => 17,
+				'created_at' => '2015-04-14 15:35:19',
+				'updated_at' => '2015-04-14 15:35:19',
+				'deleted_at' => NULL,
+				'year' => 2014,
+				'sale_date' => '2014-10-27',
+			),
+			10 => 
+			array (
+				'id' => 286,
+				'num_sold' => 3,
+				'week' => 49,
+				'event_ticket_types_id' => 18,
+				'created_at' => '2015-04-14 15:45:51',
+				'updated_at' => '2015-04-14 15:45:51',
+				'deleted_at' => NULL,
+				'year' => 2014,
+				'sale_date' => '2014-12-01',
+			),
+			11 => 
+			array (
+				'id' => 287,
+				'num_sold' => 4,
+				'week' => 12,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-15 07:58:41',
+				'updated_at' => '2015-04-15 07:58:41',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-16',
+			),
+			12 => 
+			array (
+				'id' => 288,
+				'num_sold' => 1,
+				'week' => 13,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-15 08:05:45',
+				'updated_at' => '2015-04-15 08:05:45',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-23',
+			),
+			13 => 
+			array (
+				'id' => 289,
+				'num_sold' => 0,
+				'week' => 16,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-15 09:31:52',
+				'updated_at' => '2015-04-15 09:31:52',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			14 => 
+			array (
+				'id' => 290,
+				'num_sold' => 0,
+				'week' => 16,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-15 09:31:52',
+				'updated_at' => '2015-04-15 09:31:52',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			15 => 
+			array (
+				'id' => 291,
+				'num_sold' => 0,
+				'week' => 16,
+				'event_ticket_types_id' => 18,
+				'created_at' => '2015-04-15 10:06:01',
+				'updated_at' => '2015-04-15 10:06:01',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			16 => 
+			array (
+				'id' => 292,
+				'num_sold' => 0,
+				'week' => 16,
+				'event_ticket_types_id' => 17,
+				'created_at' => '2015-04-15 10:06:01',
+				'updated_at' => '2015-04-15 10:06:02',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			17 => 
+			array (
+				'id' => 293,
+				'num_sold' => 0,
+				'week' => 16,
+				'event_ticket_types_id' => 16,
+				'created_at' => '2015-04-15 10:06:02',
+				'updated_at' => '2015-04-15 10:06:02',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			18 => 
+			array (
+				'id' => 294,
+				'num_sold' => 0,
+				'week' => 14,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-15 14:07:56',
+				'updated_at' => '2015-04-15 14:18:49',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-30',
+			),
+			19 => 
+			array (
+				'id' => 295,
+				'num_sold' => 0,
+				'week' => 14,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-15 14:07:56',
+				'updated_at' => '2015-04-15 14:19:00',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-30',
+			),
+			20 => 
+			array (
+				'id' => 296,
+				'num_sold' => 99,
+				'week' => 13,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-15 14:22:08',
+				'updated_at' => '2015-04-15 14:22:08',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-23',
+			),
+			21 => 
+			array (
+				'id' => 297,
+				'num_sold' => 8,
+				'week' => 9,
+				'event_ticket_types_id' => 18,
+				'created_at' => '2015-04-15 15:03:09',
+				'updated_at' => '2015-04-15 15:03:09',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-02-23',
+			),
+			22 => 
+			array (
+				'id' => 298,
+				'num_sold' => 999,
+				'week' => 15,
+				'event_ticket_types_id' => 19,
+				'created_at' => '2015-04-15 15:24:12',
+				'updated_at' => '2015-04-15 15:24:12',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-06',
+			),
+			23 => 
+			array (
+				'id' => 299,
+				'num_sold' => 0,
+				'week' => 15,
+				'event_ticket_types_id' => 20,
+				'created_at' => '2015-04-15 15:24:12',
+				'updated_at' => '2015-04-15 15:24:12',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-06',
+			),
+			24 => 
+			array (
+				'id' => 300,
+				'num_sold' => 1,
+				'week' => 15,
+				'event_ticket_types_id' => 18,
+				'created_at' => '2015-04-17 09:15:06',
+				'updated_at' => '2015-04-17 09:15:06',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-06',
+			),
+			25 => 
+			array (
+				'id' => 301,
+				'num_sold' => 9,
+				'week' => 14,
+				'event_ticket_types_id' => 17,
+				'created_at' => '2015-04-17 09:15:15',
+				'updated_at' => '2015-04-17 09:15:15',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-30',
+			),
+			26 => 
+			array (
+				'id' => 302,
+				'num_sold' => 9,
+				'week' => 15,
+				'event_ticket_types_id' => 17,
+				'created_at' => '2015-04-17 11:57:33',
+				'updated_at' => '2015-04-17 11:57:33',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-06',
+			),
+			27 => 
+			array (
+				'id' => 303,
+				'num_sold' => 7,
+				'week' => 7,
+				'event_ticket_types_id' => 32,
+				'created_at' => '2015-04-21 10:43:58',
+				'updated_at' => '2015-04-21 10:43:58',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-02-09',
+			),
+			28 => 
+			array (
+				'id' => 304,
+				'num_sold' => 88,
+				'week' => 16,
+				'event_ticket_types_id' => 33,
+				'created_at' => '2015-04-21 11:04:09',
+				'updated_at' => '2015-04-21 11:04:09',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			29 => 
+			array (
+				'id' => 305,
+				'num_sold' => 99,
+				'week' => 12,
+				'event_ticket_types_id' => 33,
+				'created_at' => '2015-04-21 11:04:42',
+				'updated_at' => '2015-04-21 11:04:42',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-16',
+			),
+			30 => 
+			array (
+				'id' => 306,
+				'num_sold' => 5000,
+				'week' => 12,
+				'event_ticket_types_id' => 34,
+				'created_at' => '2015-04-21 13:22:59',
+				'updated_at' => '2015-04-21 13:22:59',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-16',
+			),
+			31 => 
+			array (
+				'id' => 307,
+				'num_sold' => 600,
+				'week' => 13,
+				'event_ticket_types_id' => 34,
+				'created_at' => '2015-04-21 13:23:04',
+				'updated_at' => '2015-04-21 13:23:04',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-23',
+			),
+			32 => 
+			array (
+				'id' => 308,
+				'num_sold' => 20000,
+				'week' => 14,
+				'event_ticket_types_id' => 34,
+				'created_at' => '2015-04-21 13:23:07',
+				'updated_at' => '2015-04-21 13:28:03',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-03-30',
+			),
+			33 => 
+			array (
+				'id' => 309,
+				'num_sold' => 0,
+				'week' => 15,
+				'event_ticket_types_id' => 34,
+				'created_at' => '2015-04-21 13:23:15',
+				'updated_at' => '2015-04-21 13:23:15',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-06',
+			),
+			34 => 
+			array (
+				'id' => 310,
+				'num_sold' => 888,
+				'week' => 17,
+				'event_ticket_types_id' => 34,
+				'created_at' => '2015-04-21 13:27:26',
+				'updated_at' => '2015-04-21 13:27:26',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-20',
+			),
+			35 => 
+			array (
+				'id' => 311,
+				'num_sold' => 1000,
+				'week' => 16,
+				'event_ticket_types_id' => 36,
+				'created_at' => '2015-04-21 15:31:01',
+				'updated_at' => '2015-04-21 15:32:28',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			36 => 
+			array (
+				'id' => 312,
+				'num_sold' => 300,
+				'week' => 17,
+				'event_ticket_types_id' => 36,
+				'created_at' => '2015-04-21 15:31:13',
+				'updated_at' => '2015-04-21 15:31:13',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-20',
+			),
+			37 => 
+			array (
+				'id' => 313,
+				'num_sold' => 10,
+				'week' => 16,
+				'event_ticket_types_id' => 37,
+				'created_at' => '2015-04-21 15:31:20',
+				'updated_at' => '2015-04-21 15:31:20',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+			38 => 
+			array (
+				'id' => 314,
+				'num_sold' => 12,
+				'week' => 17,
+				'event_ticket_types_id' => 37,
+				'created_at' => '2015-04-21 15:31:24',
+				'updated_at' => '2015-04-21 15:31:24',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-20',
+			),
+			39 => 
+			array (
+				'id' => 315,
+				'num_sold' => 0,
+				'week' => 16,
+				'event_ticket_types_id' => 39,
+				'created_at' => '2015-04-24 12:36:37',
+				'updated_at' => '2015-04-24 12:36:37',
+				'deleted_at' => NULL,
+				'year' => 2015,
+				'sale_date' => '2015-04-13',
+			),
+		));
+	}
+
+}

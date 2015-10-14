@@ -1,0 +1,68 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "~10.1.1",
+    "browserify-shim": "~3.8.6",
+    "del": "~1.1.1",
+    "globby": "~2.0.0",
+    "gulp": "~3.8.11",
+    "gulp-concat": "~2.5.2",
+    "gulp-jshint": "~1.10.0",
+    "gulp-livereload": "~3.8.0",
+    "gulp-plumber": "~1.0.0",
+    "gulp-premailer": "^0.4.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~2.0.0",
+    "gulp-scss-lint": "~0.1.12",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp-uglify": "~1.2.0",
+    "gulp-util": "~3.0.4",
+    "inquirer": "~0.8.4",
+    "lodash.assign": "~3.1.0",
+    "reactify": "~1.1.0",
+    "run-sequence": "~1.1.0",
+    "through2": "~0.6.5",
+    "vinyl-buffer": "~1.0.0",
+    "vinyl-ftp": "~0.4.1",
+    "vinyl-source-stream": "~1.1.0",
+    "watchify": "~3.2.1"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery",
+    "Modernizr": "global:Modernizr",
+    "Highcharts": "global:Highcharts",
+    "_": "global._"
+  },
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-animate": "^1.3.16",
+    "angular-loading-bar": "^0.7.1",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "bootstrap-sass": "~3.3.4",
+    "brim": "^1.0.11",
+    "font-awesome": "^4.3.0",
+    "gsap": "^1.16.1",
+    "hammerjs": "^2.0.4",
+    "jquery.cookie": "^1.4.1",
+    "js-cookie": "^2.0.3",
+    "platform": "^1.3.0",
+    "rangeslider.js": "^1.2.1"
+  }
+}

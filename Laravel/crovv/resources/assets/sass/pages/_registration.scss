@@ -1,0 +1,101 @@
+
+/*form styles*/
+#registration {
+	width: 600px;
+	margin: -25px auto 0;
+	text-align: center;
+	position: relative;
+	border: 0 !important;
+
+	/*progressbar*/
+	.progress_bar {
+		margin-bottom: 30px;
+		overflow: hidden;
+		/*CSS counters to number the steps*/
+		counter-reset: step;
+
+		li {
+			list-style-type: none;
+			color: $black;
+			text-transform: uppercase;
+			font-size: 9px;
+			width: 20%;
+			float: left;
+			position: relative;
+
+			/*progressbar connectors*/
+			&:before {
+				content: counter(step);
+				counter-increment: step;
+				width: 50px;
+				line-height: 50px;
+				display: block;
+				font-size: 20px;
+				color: #333;
+				background: $black;
+				border: 1px solid $black;
+				border-radius: 50%;
+				margin: 0 auto 5px;
+			}
+
+			&:after {
+				content: '';
+				width: 100%;
+				height: 2px;
+				background: $white;
+				position: absolute;
+				left: -50%;
+				top: 9px;
+				z-index: -1; /*put it behind the numbers*/
+			}
+
+			&:first-child:after {
+				/*connector not needed before the first step*/
+				content: none;
+			}
+
+			/*marking active/completed steps green*/
+			/*The number of the step and the connector before it = green*/
+			&.active:before, &.active:after {
+				background: $white;
+				color: $black;
+			}
+		}
+	}
+}
+
+
+
+#registration-form {
+	border: 0 !important;
+	position: relative;
+
+	.left-btn {
+		padding-left:0!important;
+	}
+
+	.right-btn {
+		padding-right:0!important;
+	}
+
+	.btn-form {
+		border-radius: 0;
+		background: $black;
+		color: $white;
+	}
+
+	fieldset {
+		border: 0 none;
+		border-radius: 3px;
+		/* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+		padding: 20px 30px;
+
+		box-sizing: border-box;
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	fieldset:not(:first-of-type) {
+		display: none;
+	}
+}

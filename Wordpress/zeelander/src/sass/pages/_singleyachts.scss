@@ -1,0 +1,100 @@
+body.parent-pageid-10, body.parent-pageid-821 {
+
+	overflow-x: hidden;
+
+	.single-yacht-img {
+
+		@media (min-width: $screen-sm) {
+			@include calc(height, '77vh - 122px');
+		}
+
+		.wpb_wrapper, .wpb_row, .wpb_column, .wpb_single_image {
+			height: 100%;
+		}
+
+		.vc_single_image-wrapper {
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+
+			img {
+			    width:100%;
+			    height:auto;
+
+			    @media (min-width: $screen-sm) {
+					position:absolute;
+					top:-50%; bottom:-50%;
+					left:-50%; right:-50%;
+					margin:auto;
+				}
+			}
+		}
+	}
+
+
+	@media (max-width: $screen-sm-min) {
+		.vc_button-2-wrapper {
+			width: 100%;
+
+			.vc_btn {
+				width: 100%;
+			}
+		}
+	}
+
+	.yacht-specs {
+		font-size: 1.6rem;
+
+		.single-spec {
+			font-size: 1.4rem;
+			color: $grey;
+			text-align: right;
+		}
+	}
+
+	.wpb_vc_table {
+
+		font-weight: 300;
+		font-size: 1.4rem;
+
+
+		table {
+			width: 100%;
+
+			tr {
+
+				height: 35px;
+
+				> td:last-child {
+
+					color: $grey;
+				}
+			}
+		}
+	}
+
+	iframe.yacht-video {
+
+		height: 500px;
+		margin-top: 2rem;
+	}
+
+	.acf-map {
+		width: 100%;
+		height: 380px;
+		margin-top: .375em;
+
+		@media (max-width: $screen-sm-min) {
+			height: 380px;
+		}
+
+		@media (min-width: $screen-sm) {
+			height: 380px;
+		}
+
+		.gm-style-iw {
+			padding: 1rem;
+		}
+	}
+}

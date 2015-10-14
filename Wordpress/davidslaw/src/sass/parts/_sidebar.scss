@@ -1,0 +1,199 @@
+/*=======================================
+=            Sidebar Styling            =
+=======================================*/
+
+/*==========  Box styling  ==========*/
+
+
+.no-overflow {
+	overflow:hidden;
+}
+.fluid-bg {
+	position:relative;
+	z-index:0;
+	.background-color {
+		position: absolute;
+		top:0;
+		left:-500px;
+		right:-30px;
+		bottom:0px;
+		z-index: -2;
+		&.brown {
+			background-color: $brown;
+		}
+		&.red {
+			background-color: $darkred;
+		}
+		&.blue {
+			background-color: $bluegrey;
+		}
+	}
+	&.top-bg {
+		.background-color {
+			top: -1000px;
+		}
+	}
+	&.middle-bg {
+		.background-color {
+		}
+	}
+	&.bottom-bg {
+		.background-color {
+			bottom: -2500px;
+		}
+	}
+	.inner {
+		position:relative;
+		z-index: -1;
+		opacity: 0;
+	}
+}
+.fluid-bg-neighbour {
+	position:relative;
+	z-index:1;
+	background-color: #fff;
+}
+
+
+@function grayscale($value) {
+  @return #{ "grayscale(" + $value + ")" };
+}
+
+
+/*==========  Inner styling  ==========*/
+
+.inner {
+	.sidebar-widget {
+		padding: 48px 0 50px 30px;
+		@media (max-width: $screen-sm) {
+			padding: 50px 0 50px 0px;
+		}
+		&.top {
+			padding: 48px 0 50px 30px;
+			@media (max-width: $screen-sm) {
+				padding: 50px 0 50px 0px;
+			}
+		}
+		&.bottom {
+			padding: 50px 0 50px 30px;
+			@media (max-width: $screen-sm) {
+				padding: 50px 0 50px 0px;
+			}
+		}
+		&.archief {
+			background: url(../img/archief-icon.png) 40px 10px no-repeat;
+
+			background-size: 100%;
+
+		}
+		&.faissementsverslagen {
+			background: url(../img/faissementsverslagen-icon.png) top center  no-repeat;
+			min-height: 317px;
+			background-size: 100%;
+		}
+		.title {
+			//font-weight 	: bold;
+			font-size 		: 2.4rem;
+			color 			: $white;
+			text-transform 	: uppercase;
+		}
+		.content {
+			color : $white;
+
+		}
+
+		/*==========  Nieuws item  ==========*/
+		.title {
+			line-height: 2.4rem;
+			.date {
+				color: #bdb0b0;
+				font-weight: normal;
+				font-size: 1.7rem;
+				font-style: italic;
+			}
+		}
+
+		.content {
+			a {
+				.news-title {
+					text-transform: uppercase;
+					font-size: 1.7rem;
+					margin: 10px 0 5px 0;
+					color: #fff;
+				}
+				.contact-title {
+					text-transform: uppercase;
+					font-size: 1.7rem;
+					margin: 10px 0 5px 0;
+					color: #fff;
+				}
+				p {
+					display:inline;
+				}
+				.read-more {
+					color: $white;
+					display:inline;
+				}
+				.news-excerpt {
+					color:#cbc1c1;
+					font-size: 1.3rem;
+					line-height:2.0rem;
+				}
+				.contact-excerpt {
+					color:#C1C8CB;
+					font-size: 1.3rem;
+					line-height:2.0rem;
+				}
+				&:hover,&:focus,&:active,&.active{
+					text-decoration: none;
+				}
+			}
+
+		}
+		.bankruptcies {
+			.subtitle {
+				color 			: #ece3d7 ;
+				margin 			: 7px 0;
+				font-size 		: 1.5rem;
+			}
+			.searchbar {
+				margin-top: 5px;
+				position: relative;
+				.form-control {
+					border-radius: 0;
+					padding-right: 50px;
+					box-shadow: none;
+					border: none;
+					display:inline;
+				}
+				.search-btn {
+					position: absolute;
+					right: 0px;
+
+					background-color: $black;
+					width: 34px;
+					height: 34px;
+					background-image: url(../img/search-btn.png);
+					border: none;
+					box-shadow:none;
+					color: $white;
+					display:inline;
+				}
+			}
+			a {
+				color 			: #efe8df;
+				text-transform 	: uppercase;
+				font-size 		: 1.5rem;
+				&:hover {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+
+	}
+}
+
+
+/*-----  End of Sidebar Styling  ------*/
+

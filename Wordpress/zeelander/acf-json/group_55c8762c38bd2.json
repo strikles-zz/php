@@ -1,0 +1,129 @@
+{
+    "key": "group_55c8762c38bd2",
+    "title": "Slider",
+    "fields": [
+        {
+            "key": "field_55c8763551a67",
+            "label": "Slides",
+            "name": "slides",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 1,
+            "max": "",
+            "layout": "row",
+            "button_label": "Nieuwe slide",
+            "sub_fields": [
+                {
+                    "key": "field_55c8766351a68",
+                    "label": "Achtergrond",
+                    "name": "achtergrond",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full-width-slider",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_55c87c5f51a69",
+                    "label": "titel",
+                    "name": "titel",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55c87c7551a6a",
+                    "label": "ondertitel",
+                    "name": "ondertitel",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55c8a141e93a4",
+                    "label": "action",
+                    "name": "action",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1439211866
+}

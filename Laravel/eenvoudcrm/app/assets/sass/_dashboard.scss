@@ -1,0 +1,29 @@
+.dashboard_form {
+
+	.form-group {
+		text-align: center;
+
+		&:not(:first-child) {
+			padding-left: 0 !important;
+		}
+	}
+
+	.checkbox {
+
+		label {
+			margin: 0 auto;
+		}
+
+		input[type=checkbox] {
+			margin-top: 11px !important;
+		}
+	}
+
+	input[type=text] {
+		width: 100% !important;
+	}
+
+	input[type=submit] {
+		margin: 0 auto !important;
+	}
+}

@@ -1,0 +1,26 @@
+.twitter-typeahead {
+
+	&.block {
+		display:block !important;
+	}
+}
+
+.typeahead-results-container {
+	position: absolute;
+}
+
+.tt-menu {
+	position: absolute;
+	margin-top: 3rem;
+	min-width: 100%;
+}
+
+.tt-suggestion {
+
+	a {
+		text-transform: none;
+		font-size: 1.4rem;
+		font-family: "Roboto Condensed", arial, sans-serif;
+		font-weight: 300;
+	}
+}

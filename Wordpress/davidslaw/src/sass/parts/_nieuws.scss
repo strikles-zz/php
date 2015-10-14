@@ -1,0 +1,141 @@
+/*=============================================
+=            Nieuws Pagina styling            =
+=============================================*/
+.page-news-overview {
+	margin-top: 50px;
+}
+
+
+body.category-nieuws {
+
+	header {
+
+		.header-single-image-container .h1 {
+			color: #fff !important;
+			border-color: #fff !important;
+		}
+
+	}
+
+	.nieuws-container {
+
+		.news-item {
+				color : #585858;
+				max-width: 350px;
+				opacity: 0;
+				@media (min-width: $screen-sm) {
+					min-height: 400px;
+				}
+				@media (min-width : 0) {
+					margin : 0px auto 30px auto ;
+				}
+				@media (min-width : $screen-sm) {
+					margin : 0px 20px 30px 20px ;
+				}
+				@media (min-width : $screen-md) {
+					margin : 0px auto 0px auto ;
+				}
+				@media (min-width : $screen-lg) {
+					margin : 0px 10px 0px 10px ;
+				}
+			a {
+				&:hover {
+					text-decoration: none!important;
+				}
+			}
+			p {
+				color: #a3a3a3;
+				@media (min-width : 0) {
+					font-size :1.3rem ;
+					height: 60px;
+				}
+				@media (min-width : $screen-sm) {
+					font-size :1.5rem ;
+					height: 110px;
+				}
+				@media (min-width : $screen-md) {
+					font-size :1.3rem ;
+					height: 130px;
+				}
+				@media (min-width : $screen-lg) {
+					font-size :1.3rem ;
+					height: 110px;
+				}
+			}
+
+			.img-container {
+				width 		: 100% ;
+				overflow 	: hidden ;
+				max-height 	: 172px ;
+				img {
+					width: 100%!important;
+					height: auto!important;
+				}
+			}
+
+
+			.title {
+				width: 70% ;
+				text-transform: uppercase;
+				h3{
+					color: $blue;
+					margin: 10px auto 0px 0 ;
+					font-weight: bold;
+					@media (min-width: 0) {
+						font-size: 1.6rem ;
+						margin-bottom: 10px;
+					}
+					@media (min-width: $screen-sm) {
+						font-size: 1.8rem ;
+					}
+					@media (min-width: $screen-md) {
+						font-size: 1.6rem ;
+					}
+					@media (min-width: $screen-lg) {
+						font-size: 1.6rem ;
+					}
+				}
+
+			}
+
+			.date {
+				@media (min-width: 0) {
+					font-size: 1.7rem ;
+					width 		: 30% ;
+				}
+				@media (min-width: $screen-sm) {
+					font-size: 1.8rem ;
+					width: 30% ;
+				}
+				@media (min-width: $screen-md) {
+					font-size: 1.8rem ;
+					width: 30% ;
+				}
+				@media (min-width: $screen-lg) {
+					font-size: 1.7rem ;
+					width: 30% ;
+				}
+				margin-top 	: 10px ;
+
+				.date-text {
+					color: #676767;
+					text-transform: uppercase;
+					font-style: italic;
+					display: inline;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.link-btns {
+	padding-bottom: 40px;
+	a, span {
+		font-size 	: 1.6rem ;
+		padding 	: 10px 4px ;
+		border 		: none ;
+	}
+}
+/*-----  End of Nieuws Pagina styling  ------*/
+

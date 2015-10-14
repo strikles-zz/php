@@ -1,0 +1,107 @@
+#search-container {
+
+    .row.upper {
+        height: 25rem;
+    }
+
+    #search-tablist {
+
+        li {
+            a {
+                color: $zwart;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+        }
+
+    }
+
+    .bootstrap-tagsinput {
+
+        margin-bottom: 0;
+        line-height: inherit;
+        width: 100%;
+        min-height: 30px;
+
+        input, .tag {
+            margin: 0.2rem 0;
+        }
+
+        .label-info {
+            background-color:$rood;
+        }
+    }
+
+    .details {
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 0rem;
+        }
+
+        a {
+            color: $zwart;
+            text-decoration: underline;
+
+            &:hover {
+                color:$rood;
+                text-decoration: none;
+            }
+        }
+
+        table.table.table-condensed {
+            border:none;
+
+            tr td {
+                border:none;
+                padding: 0.1rem 0.2rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .star-rating.rating-xs {
+            font-size: 1.4rem;
+        }
+    }
+
+    table.dataTable {
+
+        margin-top: 0;
+
+        thead {
+            th {
+                background: rgb(238, 238, 238);
+            }
+        }
+
+        > tbody {
+
+            > tr, > tr:nth-child(odd) {
+                cursor:pointer;
+
+                &.selected, &.selected > td {
+                    background: $rood!important;
+                    color: $wit;
+                }
+
+                &:hover, &:hover > td {
+                    background: #ff9191;
+                    color: $wit;
+                }
+            }
+
+        }
+    }
+
+    .dataTables_info, .dataTables_paginate {
+        padding: 0.5rem;
+        font-size: 85%;
+    }
+
+    .pagination>.active>a, .pagination>.active>a:hover, .pagination>.active>a:focus, .pagination>.active>span, .pagination>.active>span:hover, .pagination>.active>span:focus {
+        background-color:$rood;
+        border-color:$rood;
+        color: $wit;
+    }
+}

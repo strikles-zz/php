@@ -1,0 +1,1 @@
+@include('site.hospitalities.create')

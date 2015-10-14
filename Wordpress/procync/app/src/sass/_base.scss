@@ -1,0 +1,105 @@
+///////////////////////////////////////
+//            Basic styling          //
+///////////////////////////////////////
+
+
+
+html {
+	font-size: 62.5%;
+
+	@font-face {
+		font-family: 'Futura Light';
+		src: url('../fonts/standard/futura-lt-light.ttf');
+	}
+
+	@media (max-width: 768px) {
+		.main-wrapper {
+			padding: 0 !important;
+		}
+	}
+}
+
+.turnDeviceNotification {
+    position:fixed;
+    top: 0;
+    left:0;
+    height:100%;
+    width:100%;
+    display: none;
+    background-image:url('//i.stack.imgur.com/sValK.png');
+    background-size:cover;
+    z-index: 9999;
+}
+
+.main-content .inactive {
+    visibility: hidden !important;
+    display: none;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.border-top {
+	border-top: 1px solid #ddd !important;
+}
+
+.top-bar {
+	height: 4.3rem;
+	background-color: #4a63ad;
+}
+
+.top-gap-lg {
+	margin-top: 8rem;
+}
+
+.top-gap-md {
+	margin-top: 6rem;
+}
+
+.top-gap-sm {
+	margin-top: 3rem;
+}
+
+.top-gap-xs {
+	margin-top: 1rem;
+}
+
+.top-gap {
+	margin-top: 4rem;
+}
+
+.error-msg, .procync-msg {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.error-btn {
+	-webkit-appearance: none !important;
+	border: 0;
+	background-color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	color: black;
+	text-decoration: none !important;
+
+	&:hover {
+		color: black;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+#not-ios-8 {
+  display: none;
+}
+
+#brim-mask, #brim-main {
+  pointer-events: none;
+  display: none;
+}

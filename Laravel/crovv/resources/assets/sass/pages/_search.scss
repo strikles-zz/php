@@ -1,0 +1,140 @@
+.app-search {
+
+	.header-wrapper {
+		height: 200px!important;
+		background-color: rgba(0, 0, 0, 0);
+		background: linear-gradient(rgba(57, 149, 139, 0.8), rgba(82, 171, 109, 0.9)), url('/images/backgrounds/texture.png') repeat;
+		font-weight: 100 !important;
+
+		.header-content {
+			margin-bottom: 0 !important;
+
+			.home-header {
+				margin-top: 0;
+				position: absolute;
+				bottom: 1rem;
+				left: 0;
+				right: 0;
+				padding-left: 15px;
+				padding-right: 15px;
+
+				.details_large {
+					font-size: 30px;
+				}
+
+				/* invitation specific */
+				.search-header {
+
+					input {
+						border: 0;
+						border-radius: 0;
+						background-color: rgba(0, 0, 0, 0.4);
+						color: $white;
+						height: auto !important;
+
+						&::focus {
+						    outline:none;
+						}
+					}
+
+					.search-btn {
+						border: 0;
+						border-radius: 0;
+						background-color: $black;
+						color: $white;
+					}
+				}
+			}
+		}
+
+		.group-logo {
+			vertical-align: bottom;
+		}
+	}
+
+	.content-wrapper {
+
+		.header-label {
+			font-weight: bold;
+		}
+
+		.search-filters {
+			background: $white;
+			box-shadow: 0 0 1px 1px $light-gray;
+			padding: 2rem;
+
+			.filter-header {
+				font-weight: bold;
+			}
+
+			.filter-entry {
+
+				span, input {
+					color: $gray;
+					font-size: 1.2rem;
+				}
+			}
+		}
+
+		.users-list {
+
+			.user-entry {
+				margin-bottom: 0.5rem;
+				background: $white;
+				box-shadow: 0 0 1px 1px $light-gray;
+				padding: 2rem;
+
+				.user-name {
+					font-weight: bold;
+				}
+
+				.user-info {
+					color: $gray;
+					font-size: 12px;
+				}
+			}
+		}
+
+		.groups-list {
+
+			.search-groups-left {
+				padding-left: 0 !important;
+			}
+
+			.search-groups-right {
+				padding-right: 0 !important;
+			}
+
+			.group-entry-container {
+				background: $white;
+				box-shadow: 0 0 1px 1px $light-gray;
+
+				.group-entry {
+					padding: 2rem;
+
+					.dashboard-groups-entry-name {
+						font-weight: bold;
+					}
+
+					.dashboard-groups-entry-cat {
+						color: $green;
+					}
+
+					.dashboard-groups-entry-location {
+						color: $gray;
+						font-size: 1.2rem;
+					}
+
+					.dashboard-groups-entry-users {
+						color: $gray;
+
+						span {
+							color: $green;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}

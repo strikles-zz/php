@@ -1,0 +1,298 @@
+body {
+	header {
+
+		/*===============================
+		=            General            =
+		===============================*/
+
+		#navwrap {
+			position: relative;
+			max-height: none !important;
+		}
+
+		.normal-menu {
+
+			@media (max-width: $screen-sm-min) {
+				display: none;
+				visibility: hidden;
+			}
+			@media (min-width: $screen-sm) {
+				display: block;
+				visibility: visible;
+			}
+
+		}
+
+		.mobile-menu {
+
+			@media (max-width: $screen-sm-min) {
+				display: block;
+				visibility: visible;
+			}
+			@media (min-width: $screen-sm) {
+				display: none;
+				visibility: hidden;
+			}
+
+		}
+
+		.logo-wifi {
+			position: absolute;
+			top: -50px;
+			right: 0;
+			width: 250px;
+
+			.logo-container {
+				position: absolute;
+				top: 18px;
+				right: 0px;
+			}
+
+			.logo {
+				background: url('../img/logo2.png') no-repeat;
+				background-size: contain;
+				/*
+				width: 255px;
+				height: 168px;
+				width: 200px;
+				height: 130px;
+				*/
+			}
+			.ballen {
+				background: url('../img/ballen.png') no-repeat;
+				background-size: contain;
+				width: 125px;
+				height: 125px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 0px;
+				right:28px;
+			}
+		}
+
+
+
+
+		/*-----  End of General  ------*/
+
+
+		/*==============================
+		=            Navbar            =
+		==============================*/
+
+		nav.navbar.custom-navbar {
+			position: absolute;
+			.navbar-header {
+				position: absolute;
+				button.navbar-toggle {
+					border: none;
+					float :left;
+				}
+			}
+			ul.nav.navbar-nav {
+				font-family : 'Cubano';
+				position 	: relative;
+				// text-shadow : 5px 8px 6px rgba(0,0,0,0.25);
+				li.menu-item {
+					&.current-menu-item {
+						a {
+
+						}
+					}
+					&.active{
+						a {
+							color: $green;
+						}
+					}
+					a {
+						color: $white;
+						font-size: 18px;
+						text-transform: uppercase;
+						text-shadow: 5px 8px 6px rgba(0,0,0,0.25);
+						&:hover,&:active, &:focus{
+							background-color: transparent;
+						}
+
+					}
+
+				}
+
+				.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+					background-color: $white;
+				}
+				/*====================================================
+				=            Media query specific styling            =
+				====================================================*/
+
+				@media (max-width: $screen-md) {
+					li.menu-item {
+						a {
+							font-size: 16px;
+						}
+					}
+				}
+				/*==========  Mobile  ==========*/
+				@media (max-width: $screen-sm-min) {
+
+					background-color: #fff;
+					width:50%;
+					min-width: 250px;
+					border-radius: 0px 4px 4px 0px;
+					padding: 20px 0 20px 0;
+					li.menu-item {
+						a {
+							color: $darkblue;
+							text-shadow: none;
+						}
+					}
+					.navbar-collapse {
+						box-shadow:none;
+					}
+				}
+
+				/*-----  End of Media query specific styling  ------*/
+			}
+
+			/*====================================================
+			=            Media query specific styling            =
+			====================================================*/
+
+			/*==========  Tablet and Desktop  ==========*/
+
+			@media (min-width: $screen-sm) {
+				margin-top: 48px;
+				margin-bottom:0px;
+			}
+
+			/*==========  Mobile  ==========*/
+
+			@media (max-width: $screen-xs) {
+				.navbar-collapse {
+					box-shadow:none;
+					max-height: 2000px;
+					margin-top: 50px;
+				}
+			}
+
+			/*-----  End of Media query specific styling  ------*/
+
+
+		}
+
+		/*-----  End of Navbar  ------*/
+
+		.logo-wifi {
+			position: absolute;
+			top: -50px;
+			right: 0;
+			width: 250px;
+
+			.logo-container {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+
+			@media (min-width: $screen-md){
+				.logo-normal {
+					width: 255px;
+					height: 168px;
+				}
+
+				.ballen-normal {
+					width: 125px;
+					height: 125px;
+					right:32px;
+				}
+			}
+
+			@media (max-width: $screen-md-min){
+				.logo-normal {
+					width: 85px;
+					height: 56px;
+				}
+
+				.ballen-normal {
+					width: 41.5px;
+					height: 41.5px;
+					right:11px;
+				}
+			}
+
+			.logo-mobile {
+				width: 85px;
+				height: 56px;
+			}
+
+			.ballen {
+				position: absolute;
+				top: 0px;
+			}
+
+			.ballen-mobile {
+				width: 41.5px;
+				height: 41.5px;
+				right:11px;
+			}
+		}
+	}
+}
+
+body:not(.home) {
+
+	.logo-wifi {
+		position: absolute;
+		top: -50px;
+		right: 0;
+		width: 250px;
+
+		.logo-container {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+
+		@media (min-width: $screen-md){
+			.logo-normal {
+				width: 127.5px;
+				height: 84px;
+			}
+
+			.ballen-normal {
+				width: 62.5px;
+				height: 62.55px;
+				right:16px;
+			}
+		}
+
+		@media (max-width: $screen-md-min){
+			.logo-normal {
+				width: 85px;
+				height: 56px;
+			}
+
+			.ballen-normal {
+				width: 41.5px;
+				height: 41.5px;
+				right:11px;
+			}
+		}
+
+		.logo-mobile {
+			width: 85px;
+			height: 56px;
+		}
+
+		.ballen {
+			position: absolute;
+			top: 0px;
+		}
+
+		.ballen-mobile {
+			width: 41.5px;
+			height: 41.5px;
+			right:11px;
+		}
+	}
+}

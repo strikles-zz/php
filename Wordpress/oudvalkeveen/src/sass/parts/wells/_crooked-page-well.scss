@@ -1,0 +1,108 @@
+/*====================================
+=            Crooked Well            =
+====================================*/
+
+.custom-crooked-well {
+	//box-shadow: 1px 2px 1px rgba(0,0,0,0.25);
+	z-index: 1;
+	position:relative;
+	padding: 15px 30px 30px 30px;
+	-webkit-border-radius: 18px 18px 0 18px;
+	-moz-border-radius: 18px 18px 0 18px;
+	-ms-border-radius: 18px 18px 0 18px;
+	-o-border-radius: 18px 18px 0 18px;
+	border-radius: 18px 18px 0 18px;
+	color: #505050;
+	margin-bottom: 50px;
+
+	.download {
+		font-size: 19px;
+		margin-top: 20px;
+		margin-right: 40px;
+		text-transform: uppercase;
+		display: block;
+		text-align: right;
+		color: #587e05;
+		font-family: 'Dosis';
+		font-weight: bold;
+		margin-bottom: 0.5em;
+		border-bottom: none;
+		text-decoration: none!important;
+
+	}
+
+
+
+	&:after{
+		position: absolute;
+
+	    top: 100%;
+	    left: 0;
+	    right: 0;
+	    margin-left: 18px;
+	    content: '';
+
+	    height: 0;
+	    border-radius: 0 0 18px 0;
+	    border-top: solid 32px red;
+	    border-left: solid 470px transparent;
+
+	}
+
+	&.white {
+		&:after{
+			border-top-color: $white;
+		}
+		background-color: $white;
+
+	}
+	&.red {
+		&:after{
+			border-top-color: $red;
+		}
+		background-color: $red;
+	}
+	&.yellow {
+		&:after{
+			border-top-color: $brightyellow;
+		}
+		background-color: $brightyellow;
+	}
+	&.darkyellow {
+		&:after{
+			border-top-color: $darkyellow;
+		}
+		background-color: $darkyellow;
+	}
+	&.blue {
+		&:after{
+			border-top-color: $blue;
+		}
+		background-color: $blue;
+	}
+	&.darkblue {
+		&:after{
+			border-top-color: $marineblue;
+		}
+		background-color: $marineblue;
+		color: $white;
+	}
+	&.green {
+		&:after{
+			border-top-color: $green;
+		}
+		background-color: $green;
+
+
+	}
+	&.pink {
+		&:after{
+			border-top-color: $pink;
+		}
+		background-color: $pink;
+	}
+
+}
+
+
+/*-----  End of Crooked Well  ------*/

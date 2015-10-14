@@ -1,0 +1,26 @@
+//==========  Eenvoud Foundetion font face  ==========*/
+
+html {
+  font-size: 62.5%;
+  background-color: $bluegrey;
+  @font-face {
+    font-family: 'Futura Light';
+    src: url('../fonts/standard/futura-lt-light.ttf');
+  }
+
+}
+
+#test {
+  opacity: 1;
+}
+
+//=========  WP login logo  ==========*/
+.login h1 a {
+  background: url('../img/login-logo.png') no-repeat top center;
+  display: block;
+  height: 6.7rem;
+  overflow: hidden;
+  padding-bottom: 15px;
+  text-indent: -9999px;
+  width: 32.6rem;
+}

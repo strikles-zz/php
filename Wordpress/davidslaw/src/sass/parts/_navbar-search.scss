@@ -1,0 +1,100 @@
+/*=============================================
+=            Search navbar styling            =
+=============================================*/
+
+.bankruptcy-nav-bg {
+	background-color : $darkred;
+}
+.bankruptcy-navigation {
+	padding : 13px 0;
+	span {
+		font-size 	: 2.0rem;
+		font-weight : 100;
+		color 		: #DBCECE;
+		.indent, .name {
+			font-weight : normal;
+		}
+		.white{
+			color : $white;
+		}
+	}
+	.searchresults {
+		padding-top:7px;
+		span {
+			&.title {
+				color: $white;
+			}
+			&.query {
+			}
+		}
+	}
+
+	.bankruptcy-searchbar {
+		position:relative;
+		max-width: 22.0rem;
+		.search-input {
+			border 			: none;
+			box-shadow 		: none!important;
+			border-bottom 	: 1px solid #e1d8d8;
+			color 			: #e1d8d8;
+			border-radius 	: 0;
+			background-color: transparent;
+			position 		: relative;
+			display 		: inline;
+			padding-right 	: 34px;
+
+		}
+		&:before {
+			content 		: '';
+			position 		: absolute;
+			bottom 			: 0px;
+			left 			: 0px;
+			height 			: 30%;
+			border-right 	: 1px solid #e1d8d8;
+		}
+		&:after {
+			content 		: '';
+			position 		: absolute;
+			bottom 			: 0px;
+			right 			: 0px;
+			height 			: 30%;
+			border-right 	: 1px solid #e1d8d8;
+		}
+		.search-btn {
+			position 			: absolute;
+			box-shadow 			: none!important;
+			right 				: 8px;
+			top 				: 8px;
+			padding 			: 0;
+			background-color 	: transparent;
+			width 				: 19px;
+			height 				: 19px;
+			background-image 	: url(../img/search-btn-faillissement.png);
+			border 				: none;
+			box-shadow 			: none;
+			color 				: $white;
+			display 			:inline;
+		}
+	}
+
+	.navigation-letters {
+		cursor:pointer;cursor:hand;
+		padding-top: 10px;
+		text-align: right;
+		@media (max-width: $screen-sm ){
+			text-align:left;
+		}
+		.navigation-letter {
+			color : #e1d8d8;
+			font-size: 1.7rem;
+			text-transform: uppercase;
+			padding-right: 5px;
+			font-weight:100;
+			&:hover {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}
+/*-----  End of Search navbar styling  ------*/

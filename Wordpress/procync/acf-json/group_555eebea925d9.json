@@ -1,0 +1,182 @@
+{
+    "key": "group_555eebea925d9",
+    "title": "User Details",
+    "fields": [
+        {
+            "key": "field_555eecd1fb199",
+            "label": "Company or Agency",
+            "name": "company_or_agency",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "company": "Company",
+                "agency": "Agency"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_555eecf0fb19a",
+            "label": "Company",
+            "name": "company",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_555eecd1fb199",
+                        "operator": "==",
+                        "value": "company"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "company"
+            ],
+            "taxonomy": [
+
+            ],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_555eed11fb19b",
+            "label": "Agency",
+            "name": "agency",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_555eecd1fb199",
+                        "operator": "==",
+                        "value": "agency"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "agency"
+            ],
+            "taxonomy": [
+
+            ],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_555eec0761d79",
+            "label": "Evaluations",
+            "name": "evaluations",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "evaluation"
+            ],
+            "taxonomy": [
+
+            ],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_559a3ceffbc06",
+            "label": "Access to reporting tool?",
+            "name": "has_access_to_reporting_tool",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "user_form",
+                "operator": "==",
+                "value": "edit"
+            },
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "OP"
+            }
+        ],
+        [
+            {
+                "param": "user_form",
+                "operator": "==",
+                "value": "edit"
+            },
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "OM"
+            }
+        ],
+        [
+            {
+                "param": "user_form",
+                "operator": "==",
+                "value": "edit"
+            },
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "TM"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1441911665
+}

@@ -1,0 +1,123 @@
+#ticketsRoot {
+    font-weight: normal;
+
+	.sized-row {
+		padding: 5px 0;
+		min-height: 35px;
+	}
+
+	.sized-header-row {
+		padding: 15px 0;
+		border-bottom: 2px solid $grijs;
+	}
+
+	.header-label {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $zwart;
+	}
+
+	.entry-row:not(:last-child) {
+		border-bottom: 1px solid $lichtgrijs;
+	}
+
+	.we-row:not(:first-child) {
+		border-top: 2px solid $grijs;
+	}
+
+	.action-btn {
+		outline: none;
+		padding: 0.5rem;
+		border-radius: 2px;
+		border: 1px solid $donkergrijs;
+	}
+
+	.entry-year {
+		color: $donkergrijs;
+		font-size: x-small;
+	}
+
+}
+
+#aldaTickets {
+
+	.total-row {
+		border-bottom: 2px solid $grijs;
+		background-color: $wit;
+	}
+
+	.grand-total-row {
+		border-top: 2px solid $grijs;
+		border-bottom: 2px solid $grijs;
+		background-color: $vlichtgrijs;
+	}
+
+	.headers-row {
+		border-bottom: 2px solid $grijs;
+
+		.headers-right {
+			border-left: 1px solid $lichtgrijs;
+			background-color: $wit;
+		}
+	}
+
+    .tickets-weekly-entries {
+        border-right: 1px solid $lichtgrijs;
+    }
+
+    .tickets-totals {
+        background-color: $wit;
+    }
+
+    .week_entry {
+    	border-left: 1px solid $grijs;
+    }
+
+	.week-action-btn {
+		outline: none;
+		padding: 5px;
+		border-radius: 2px;
+		border: 1px solid $donkergrijs;
+	}
+
+	@media (min-width: 768px) {
+
+		.tickets-weekly-entries, .tickets-totals {
+			height: 80%;
+			overflow-y: scroll;
+
+			&::-webkit-scrollbar {
+			    width: 7px;
+			}
+			&::-webkit-scrollbar-track {
+			    background-color: $wit;
+			    border-left: 1px solid #ccc;
+			}
+			&::-webkit-scrollbar-thumb {
+			    background-color: $donkergrijs;
+			    border-radius: 5px;
+			}
+			&::-webkit-scrollbar-thumb:hover {
+			    background-color: $zwart;
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+
+		.tickets-totals {
+			margin-top: 20px;
+		}
+	}
+}
+
+#promoterTickets {
+
+	input {
+		padding: 0;
+	}
+
+	.available-col {
+		border-left: 1px solid $grijs;
+	}
+}

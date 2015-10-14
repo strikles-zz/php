@@ -1,0 +1,123 @@
+
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
+}
+
+.lighter {
+	font-weight: lighter;
+}
+
+.lighter-sm {
+	font-weight: lighter;
+	font-size: 1.1rem;
+}
+
+.gray {
+	color: $gray;
+}
+
+.awhite {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.bottom-gap {
+	margin-bottom: 4rem;
+}
+
+.top-gap {
+	margin-top: 2rem;
+}
+
+.top-gap-sm {
+	margin-top: 1rem;
+}
+
+.top-gap-xs {
+	margin-top: 0.5rem;
+}
+
+.align-bottom {
+	vertical-align: baseline;
+}
+
+.spacer-5 {
+	margin-top: 5rem;
+}
+
+.spacer-10 {
+	margin-top: 10rem;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-padding-left {
+	padding-left: 0 !important;
+}
+
+.no-padding-right {
+	padding-right: 0 !important;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.see-all {
+	color: $gray;
+	font-size: 1.2rem;
+}
+
+span.count {
+	color: $gray;
+}
+
+
+
+.ui-state-default {
+	box-sizing: content-box;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	margin-right: -20px;
+	padding-bottom: 18rem;
+	min-height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background: $white;
+
+	.content-wrapper {
+
+		.content {
+			padding-bottom: 50px;
+		}
+	}
+
+	button, a, h1, h2, h3, h4 {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	h1, h2, h3, h4 {
+		font-weight: bold;
+	}
+
+	input, textarea {
+		border-radius: 0 !important;
+	}
+}
+
+

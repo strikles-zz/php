@@ -1,0 +1,101 @@
+.app-subscription {
+
+    .header-wrapper {
+        height: 500px !important;
+        background-color: rgba(0, 0, 0, 0);
+        background: linear-gradient(rgba(57, 149, 139, 0.8), rgba(82, 171, 109, 0.9)), url('/images/backgrounds/texture.png') repeat;
+
+        .home-header {
+            margin-top: 12rem;
+            color: $white;
+        }
+    }
+
+    .content-wrapper {
+
+    	.subscriptions {
+			margin-top: -9rem;
+
+			.plan-lite {
+
+				.plan-title {
+					background: $dark-gray;
+					background-clip:content-box;
+				}
+			}
+
+			.plan-expert, .plan-pro {
+
+				.plan-title {
+					background: linear-gradient(rgba(57, 149, 139, 0.8), rgba(82, 171, 109, 0.9)), url('/images/backgrounds/texture.png') repeat;
+					background-clip:content-box;
+				}
+			}
+
+			.subscriptions-entry-container {
+				padding: 0 15px;
+				box-shadow: 0 0 1px 1px $light-gray;
+
+				.subscriptions-entry {
+	    			text-align: center;
+
+					.plan-head {
+
+		    			.plan-titlebar {
+		    				height: 4rem;
+							color: $white;
+							line-height: 4rem;
+							background: $black;
+		    			}
+
+						.plan-title {
+							color: $white;
+
+			    			.plan-price {
+			    				margin-top: 2rem;
+								font-size: 7rem;
+			    			}
+
+			    			.plan-description {
+								margin-bottom: 3rem;
+			    			}
+						}
+					}
+
+	    			.plan-content {
+	    				text-align: left;
+	    				margin-top: 3rem;
+						margin-bottom: 3rem;
+
+						.plan-feature {
+							position: relative;
+
+							&:before {
+								font-family: FontAwesome;
+								font-weight: normal;
+								font-style: normal;
+								font-size: 20px;
+								position: absolute;
+								display: inline-block;
+								color: $green;
+								left: -50px;
+								top: 0px;
+								content: '\f00c';
+								text-decoration: inherit;
+								text-align: center;
+								vertical-align: middle;
+							}
+						}
+	    			}
+
+	    			.plan-footer {
+	    				height: 4rem;
+						color: $white;
+						line-height: 4rem;
+						background: $black;
+	    			}
+	    		}
+			}
+    	}
+    }
+}

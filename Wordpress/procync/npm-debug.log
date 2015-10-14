@@ -1,0 +1,140 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gulp-premailer' ]
+2 info using npm@2.9.0
+3 info using node@v0.10.33
+4 verbose install initial load of /var/www/sites/package.json
+5 verbose installManyTop reading scoped package data from /var/www/sites/node_modules/bower/package.json
+6 verbose installManyTop reading scoped package data from /var/www/sites/node_modules/cordova/package.json
+7 verbose installManyTop reading scoped package data from /var/www/sites/node_modules/gulp/package.json
+8 verbose installManyTop reading scoped package data from /var/www/sites/node_modules/modulus/package.json
+9 verbose installManyTop reading scoped package data from /var/www/sites/node_modules/npm/package.json
+10 verbose readDependencies loading dependencies from /var/www/sites/package.json
+11 silly cache add args [ 'gulp-premailer', null ]
+12 verbose cache add spec gulp-premailer
+13 silly cache add parsed spec { raw: 'gulp-premailer',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'gulp-premailer',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: '*',
+13 silly cache add   type: 'range' }
+14 silly addNamed gulp-premailer@*
+15 verbose addNamed "*" is a valid semver range for gulp-premailer
+16 silly addNameRange { name: 'gulp-premailer', range: '*', hasData: false }
+17 silly mapToRegistry name gulp-premailer
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/gulp-premailer
+21 verbose addNameRange registry:https://registry.npmjs.org/gulp-premailer not in flight; fetching
+22 verbose request uri https://registry.npmjs.org/gulp-premailer
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 18:50:38
+25 verbose request id da43c0c7aca41c8b
+26 verbose etag "9H7OJPTVLZ6KZO3H5WPUBXOQL"
+27 http request GET https://registry.npmjs.org/gulp-premailer
+28 http 304 https://registry.npmjs.org/gulp-premailer
+29 silly get cb [ 304,
+29 silly get   { date: 'Wed, 26 Aug 2015 16:50:38 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     'cache-control': 'max-age=60',
+29 silly get     etag: '"9H7OJPTVLZ6KZO3H5WPUBXOQL"',
+29 silly get     age: '37',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-ams4128-AMS',
+29 silly get     'x-cache': 'HIT',
+29 silly get     'x-cache-hits': '1',
+29 silly get     'x-timer': 'S1440607838.253847,VS0,VE0',
+29 silly get     vary: 'Accept' } ]
+30 verbose etag https://registry.npmjs.org/gulp-premailer from cache
+31 verbose get saving gulp-premailer to /var/www/.npm/registry.npmjs.org/gulp-premailer/.cache.json
+32 silly addNameRange number 2 { name: 'gulp-premailer', range: '*', hasData: true }
+33 silly addNameRange versions [ 'gulp-premailer',
+33 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.2.0', '0.3.0', '0.4.0' ] ]
+34 silly addNamed gulp-premailer@0.4.0
+35 verbose addNamed "0.4.0" is a plain semver version for gulp-premailer
+36 silly cache afterAdd gulp-premailer@0.4.0
+37 verbose afterAdd /var/www/.npm/gulp-premailer/0.4.0/package/package.json not in flight; writing
+38 verbose afterAdd /var/www/.npm/gulp-premailer/0.4.0/package/package.json written
+39 silly install resolved [ { name: 'gulp-premailer',
+39 silly install resolved     version: '0.4.0',
+39 silly install resolved     description: 'A gulp module using Premailer to bring CSS styles inline when developing HTML emails.',
+39 silly install resolved     homepage: 'https://github.com/justin713/gulp-premailer',
+39 silly install resolved     author: { name: 'Justin Ross', url: 'https://github.com/justin713' },
+39 silly install resolved     repository:
+39 silly install resolved      { type: 'git',
+39 silly install resolved        url: 'git+ssh://git@github.com/justin713/gulp-premailer.git' },
+39 silly install resolved     bugs: { url: 'https://github.com/justin713/gulp-premailer/issues' },
+39 silly install resolved     license: 'MIT',
+39 silly install resolved     main: 'index.js',
+39 silly install resolved     scripts: { test: 'mocha --reporter spec' },
+39 silly install resolved     keywords: [ 'gulpplugin', 'premailer', 'css', 'inliner' ],
+39 silly install resolved     engines: { node: '>=0.10.0' },
+39 silly install resolved     dependencies:
+39 silly install resolved      { 'gulp-util': '~2.2.0',
+39 silly install resolved        through2: '~0.4.0',
+39 silly install resolved        'win-spawn': '~2.0.0',
+39 silly install resolved        which: '~1.0.5' },
+39 silly install resolved     devDependencies: { mocha: '~1.17.1', should: '~3.1.2', spec: '~1.0.1' },
+39 silly install resolved     gitHead: '07113dbade0ca1c6318902f145f88cd1883bb251',
+39 silly install resolved     _id: 'gulp-premailer@0.4.0',
+39 silly install resolved     _shasum: '79b2cc8ef4e561350e1e3b37689c492f3aef3efd',
+39 silly install resolved     _from: 'gulp-premailer@*',
+39 silly install resolved     _npmVersion: '1.4.23',
+39 silly install resolved     _npmUser: { name: 'justin713', email: 'ponderous2k@hotmail.com' },
+39 silly install resolved     maintainers: [ [Object] ],
+39 silly install resolved     dist:
+39 silly install resolved      { shasum: '79b2cc8ef4e561350e1e3b37689c492f3aef3efd',
+39 silly install resolved        tarball: 'http://registry.npmjs.org/gulp-premailer/-/gulp-premailer-0.4.0.tgz' },
+39 silly install resolved     directories: {},
+39 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp-premailer/-/gulp-premailer-0.4.0.tgz',
+39 silly install resolved     readme: 'ERROR: No README data found!' } ]
+40 info install gulp-premailer@0.4.0 into /var/www/sites
+41 info installOne gulp-premailer@0.4.0
+42 verbose installOne of gulp-premailer to /var/www/sites not in flight; installing
+43 verbose lock using /var/www/.npm/_locks/gulp-premailer-40db952c2391362e.lock for /var/www/sites/node_modules/gulp-premailer
+44 silly install write writing gulp-premailer 0.4.0 to /var/www/sites/node_modules/gulp-premailer
+45 verbose unbuild node_modules/gulp-premailer
+46 silly gentlyRm /var/www/sites/node_modules/gulp-premailer is being purged from base /var/www/sites
+47 verbose gentlyRm don't care about contents; nuking /var/www/sites/node_modules/gulp-premailer
+48 verbose tar unpack /var/www/.npm/gulp-premailer/0.4.0/package.tgz
+49 verbose tar unpacking to /var/www/sites/node_modules/gulp-premailer
+50 silly gentlyRm /var/www/sites/node_modules/gulp-premailer is being purged
+51 verbose gentlyRm don't care about contents; nuking /var/www/sites/node_modules/gulp-premailer
+52 silly gunzTarPerm modes [ '775', '664' ]
+53 error tar.unpack untar error /var/www/.npm/gulp-premailer/0.4.0/package.tgz
+54 verbose unlock done using /var/www/.npm/_locks/gulp-premailer-40db952c2391362e.lock for /var/www/sites/node_modules/gulp-premailer
+55 verbose fstream_path /var/www/sites/node_modules/gulp-premailer
+56 verbose fstream_type Directory
+57 verbose fstream_class DirWriter
+58 verbose stack Error: EACCES, mkdir '/var/www/sites/node_modules/gulp-premailer'
+59 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+59 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+59 verbose fstream_stack Object.oncomplete (fs.js:107:15)
+60 verbose cwd /var/www/sites/procync/htdocs/content/themes/procync
+61 error Linux 3.13.0-61-generic
+62 error argv "node" "/usr/local/bin/npm" "install" "--save-dev" "gulp-premailer"
+63 error node v0.10.33
+64 error npm  v2.9.0
+65 error path /var/www/sites/node_modules/gulp-premailer
+66 error code EACCES
+67 error errno 3
+68 error Error: EACCES, mkdir '/var/www/sites/node_modules/gulp-premailer'
+68 error  { [Error: EACCES, mkdir '/var/www/sites/node_modules/gulp-premailer']
+68 error   errno: 3,
+68 error   code: 'EACCES',
+68 error   path: '/var/www/sites/node_modules/gulp-premailer',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/var/www/sites/node_modules/gulp-premailer',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+68 error      'Object.oncomplete (fs.js:107:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ 3, true ]
+71 verbose unbuild node_modules/gulp-premailer
+72 silly gentlyRm /var/www/sites/node_modules/gulp-premailer is being purged from base /var/www/sites
+73 verbose gentlyRm don't care about contents; nuking /var/www/sites/node_modules/gulp-premailer

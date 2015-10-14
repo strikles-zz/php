@@ -1,0 +1,27 @@
+.page-home {
+    margin-top: 100px;
+
+    a#link-companies, a#link-venues, a#link-contacts, a#link-hospitality {
+        background: url(../img/dashboard-sprite.png) no-repeat;
+        display:block;
+        width: 140px;
+        height: 160px;
+        margin-left:30px;
+
+        &:hover {
+        background-position-y: -179px;
+        }
+    }
+
+    a#link-venues {
+        background-position-x: -250px;
+    }
+
+    a#link-contacts {
+        background-position-x: -750px;
+    }
+    a#link-hospitality {
+        background-position-x: -490px;
+    }
+
+}

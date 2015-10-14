@@ -1,0 +1,31 @@
+.wpb_text_next_to_image .shortcode-container {
+	background: #03b2c0;
+}
+
+.wpb_text_next_to_image .text-container {
+	width: 40%;
+	float:left;
+}
+
+.wpb_text_next_to_image .text-container section.content {
+	padding: 50px;
+	color: #fff;
+}
+
+.wpb_text_next_to_image .img-container {
+	width: 60%;
+	float:left;
+}
+
+.wpb_text_next_to_image .img-container img {
+	width: 100%;
+	opacity: 0;
+}
+
+.wpb_text_next_to_image .img-container {
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 500px;
+	overflow: hidden;
+	background-position: center center;
+}

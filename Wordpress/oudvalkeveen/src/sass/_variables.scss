@@ -1,0 +1,67 @@
+/*==============================
+=            Colors            =
+==============================*/
+
+	$white : #fff;
+	$black : #000;
+	$grey  : #555;
+
+	/*==========  Theme specific  ==========*/
+
+	$background : #0E93C9;
+	$greentext	: #97DC09;
+
+	$green 			: #A6DE00;
+	$deepgreen		: #97DC09;
+	$darkblue		: #005578;
+	$lightblue 		: #B9E7FF;
+	$marineblue 	: #1769A7;
+	$blue 			: #00AFFB;
+	$brown 			: #BE5106;
+	$pink 			: #D10083;
+	$darkyellow		: #FFD200;
+	$brightyellow 	: #FFF23F;
+	$yellow 		: #EDDC1B;
+	$orangeyellow 	: #F7AC1A;
+	$orange 		: #FF9600;
+	$orangetext 	: #E47C01;
+	$darkorange 	: #B24706;
+	$red 			: #ED1B24;
+
+	$rickgrey: #505050;
+
+
+
+
+
+
+/*-----  End of Colors  ------*/
+
+
+
+/*====================================
+=            Screem sizes            =
+====================================*/
+
+	$screen-xs 	: 480px  !default;
+	$screen-sm 	: 768px  !default;
+	$screen-md 	: 992px  !default;
+	$screen-lg 	: 1200px !default;
+	$screen-hd 	: 1920px !default;
+
+	$screen-xs-min 	: 479px  !default;
+	$screen-sm-min 	: 767px  !default;
+	$screen-md-min 	: 991px  !default;
+	$screen-lg-min 	: 1199px !default;
+
+	$mobile-min	: 0;
+	$mobile-max	: $screen-sm - 1;
+
+	$tablet-min	: $screen-sm;
+	$tablet-max	: $screen-lg - 1;
+
+	$laptop-min	: $screen-lg;
+	$laptop-max	: $screen-hd;
+
+/*-----  End of Screem sizes  ------*/
+

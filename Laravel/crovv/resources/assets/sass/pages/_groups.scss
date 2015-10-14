@@ -1,0 +1,320 @@
+
+/*form styles*/
+#groupscreate {
+    width: 600px;
+    margin: -25px auto 0;
+    text-align: center;
+    position: relative;
+    border: 0 !important;
+
+    /*progressbar*/
+    .progress_bar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        /*CSS counters to number the steps*/
+        counter-reset: step;
+
+        li {
+            list-style-type: none;
+            color: $black;
+            text-transform: uppercase;
+            font-size: 9px;
+            width: 33%;
+            float: left;
+            position: relative;
+
+            /*progressbar connectors*/
+            &:before {
+                content: counter(step);
+                counter-increment: step;
+                width: 50px;
+                line-height: 50px;
+                display: block;
+                font-size: 20px;
+                color: #333;
+                background: $black;
+                border: 1px solid $black;
+                border-radius: 50%;
+                margin: 0 auto 5px;
+            }
+
+            &:after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: $white;
+                position: absolute;
+                left: -50%;
+                top: 9px;
+                z-index: -1; /*put it behind the numbers*/
+            }
+
+            &:first-child:after {
+                /*connector not needed before the first step*/
+                content: none;
+            }
+
+            /*marking active/completed steps green*/
+            /*The number of the step and the connector before it = green*/
+            &.active:before, &.active:after {
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+}
+
+
+
+.app-groups {
+
+    .header-wrapper {
+        height: 300px!important;
+        background-color: rgba(0, 0, 0, 0);
+        background: linear-gradient(rgba(57, 149, 139, 0.8), rgba(82, 171, 109, 0.9)), url('/images/backgrounds/texture.png') repeat;
+        font-weight: 100 !important;
+
+        .header-content {
+            margin-bottom: 0 !important;
+
+            .home-header {
+                margin-top: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding-left: 15px;
+                padding-right: 15px;
+
+                .details_large {
+                    font-size: 30px;
+                }
+
+                /* invitation specific */
+                .search-header {
+
+                    input {
+                        border: 0;
+                        border-radius: 0;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        color: $white;
+                        height: auto !important;
+
+                        &::focus {
+                            outline:none;
+                        }
+                    }
+
+                    .search-btn {
+                        border: 0;
+                        border-radius: 0;
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+
+                .table-col {
+                    float: none;
+                    display: table-cell;
+                    vertical-align: top;
+                }
+            }
+        }
+
+        .group-logo, .user-logo {
+            vertical-align: bottom;
+            height: 100%;
+            width: auto;
+        }
+
+        .group_attend, .group_info {
+            font-size: 12px;
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            padding: 5px 10px;
+            border: 1px solid $white;
+            text-transform: uppercase;
+            width: 100%;
+            color: $white;
+        }
+    }
+
+    .content-wrapper {
+
+        /* groups specific */
+        .groups-detail {
+
+            .group-leave, .group-join, .group-notification {
+                color: $white;
+                background-color: $black;
+                text-transform: uppercase;
+                border-radius: 0;
+                margin-top: 2rem;
+                width: 100%;
+            }
+
+            .group_website {
+                color: rgba(57, 149, 139, 1);
+            }
+
+            /* lost */
+            .group_name_head, .group_members_head, .group_options_head {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .group_name_head {
+                text-transform: uppercase;
+            }
+
+            .group_members_list .group_member_entry {
+                display: inline-block !important;
+            }
+        }
+
+
+        /* subscriptions specific */
+        .group-invitations {
+
+            .header-label {
+                font-weight: bold;
+                min-height: 35px;
+                line-height: 35px;
+
+                .send-invites {
+                    background: $black;
+                    color: $white;
+                    border-radius: 0;
+                }
+            }
+
+            .search-filters {
+                background: $white;
+                box-shadow: 0 0 1px 1px $light-gray;
+                padding: 2rem;
+
+                .filter-header {
+                    font-weight: bold;
+                }
+
+                .filter-entry {
+
+                    span, input {
+                        color: $gray;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .users-list {
+                background: $white;
+                box-shadow: 0 0 1px 1px $light-gray;
+                padding: 2rem;
+
+                .user-entry {
+                    margin-bottom: 0.5rem;
+
+                    .user-name {
+                        font-weight: bold;
+                    }
+
+                    .user-info {
+                        color: $gray;
+                        font-size: 12px;
+                    }
+                }
+
+                input.faChkRnd, input.faChkSqr {
+                    appearance: none;
+                }
+
+                input.faChkRnd:checked:after, input.faChkRnd:after,
+                input.faChkSqr:checked:after, input.faChkSqr:after {
+                    visibility: visible;
+                    font-family: FontAwesome;
+                    font-size:25px; height: 17px; width: 17px;
+                    position: relative;
+                    top: -3px;
+                    left: 0px;
+                    background-color:$white;
+                    display: inline-block;
+                }
+
+                input.faChkRnd:checked:after {
+                    color: $green;
+                    content: '\f058';
+                }
+
+                input.faChkRnd:after {
+                    color: rgba(119, 119, 119, 0.2);
+                    content: '\f1db';
+                }
+
+                input.faChkSqr:checked:after {
+                    content: '\f14a';
+                }
+
+                input.faChkSqr:after {
+                    content: '\f096';
+                }
+            }
+
+            .selected-entry {
+                background: $white;
+                box-shadow: 0 0 1px 1px $light-gray;
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+.modal {
+
+    .modal-content {
+        border-radius: 0 !important;
+
+        .modal-header {
+            background: linear-gradient(rgba(57, 149, 139, 0.8), rgba(82, 171, 109, 0.9)), url('/images/backgrounds/texture.png') repeat;
+            color: $white;
+
+            .modal-title {
+                font-size: 16px;
+            }
+
+            .close {
+                color: $white;
+                text-shadow: none;
+                opacity: 0.7;
+            }
+        }
+
+        .modal-footer {
+
+            .btn {
+                border-radius: 0;
+                background: $black;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+#notificationModal {
+
+    .modal-body {
+        padding: 0;
+
+        .form-group {
+            margin: 0;
+
+            input, textarea {
+                border: 0;
+            }
+        }
+    }
+
+}

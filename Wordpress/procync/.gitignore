@@ -1,0 +1,7 @@
+# Miscellaneous
+.DS_Store
+Thumbs.db
+.idea/
+
+# Theme
+composer.lock

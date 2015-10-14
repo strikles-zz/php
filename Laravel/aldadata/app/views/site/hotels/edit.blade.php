@@ -1,0 +1,1 @@
+@include('site.hotels.create')

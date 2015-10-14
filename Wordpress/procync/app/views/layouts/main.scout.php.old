@@ -1,0 +1,18 @@
+@include('header')
+
+    <div id="brim-mask">
+        <p>IOS 8 + Safari detected !</p>
+        <p>Please swipe to continue !</p>
+    </div>
+
+    <div id="brim-main" class="main-wrapper">
+    	<div class="turnDeviceNotification"></div>
+        @yield('main')
+    </div>
+
+    <div id="not-ios-8" class="main-wrapper">
+    	<div class="turnDeviceNotification"></div>
+        @yield('main')
+    </div>
+
+@include('footer')

@@ -1,0 +1,131 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav {
+
+	#main-nav {
+		background: $white;
+		position: relative;
+		z-index: 1000;
+	}
+
+  &.navbar-default {
+    z-index: -1;
+    margin-top: -1px;
+    min-height: 20px;
+    background-color: $white;
+    -webkit-box-shadow: 0 3px 2px -2px $navshadow;
+    box-shadow: 0 3px 2px -2px $navshadow;
+
+    @media (max-width: $screen-sm-min){
+      height: 78px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      border: 0;
+    }
+
+  }
+
+  .navbar-header {
+    height: 100%;
+
+    .navbar-toggle {
+      z-index: 1000;
+      float: left !important;
+      border: 0 !important;
+
+      @media (max-width: $screen-sm-min){
+        height: 60px;
+
+        .icon-bar {
+          width: 30px;
+        }
+      }
+    }
+
+    .navbar-brand {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 5px;
+
+      img {
+        width: auto;
+        margin: auto;
+        max-width: 100%;
+
+        @media (max-width: $screen-sm-min){
+          margin-top: 15px;
+          margin-bottom: 15px;
+          height: 95%;
+        }
+
+        @media (min-width: $screen-sm){
+          height: 100%;
+        }
+      }
+
+    }
+  }
+
+  .navbar-nav{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media (min-width: 768px){
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+      float:none;
+    }
+
+    .dropdown-menu {
+      font-size: 12px !important;
+    }
+
+    li {
+
+    	&:hover {
+
+        @media (max-width: $screen-sm-min){
+    			background: $lightgrey;
+    		}
+    	}
+
+    	> a {
+	      box-sizing: border-box;
+	      font-weight: normal;
+	      line-height: 30px;
+	      vertical-align: middle;
+
+	      &:hover {
+	        color: $black;
+
+	      }
+
+	      @media (min-width: $screen-md) {
+	        padding: 0 30px;
+	      }
+
+	      @media (min-width: $screen-sm) and (max-width: $screen-md-min) {
+	        padding: 0 10px;
+	      }
+	  }
+    }
+  }
+}
+
+.navlogo {
+  background-color: $white;
+  padding: 2rem;
+  -webkit-box-shadow: 0 3px 2px -2px $navshadow;
+  box-shadow: 0 3px 2px -2px $navshadow;
+}
+

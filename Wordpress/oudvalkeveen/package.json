@@ -1,0 +1,34 @@
+{
+  "name": "oudvalkeveen",
+  "version": "0.0.0",
+  "description": "Oudvalkeveen",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browserify": "~8.1.3",
+    "gulp": "~3.8.11",
+    "bootstrap-sass": "~3.3.3",
+    "gulp-ftp": "~1.0.2",
+    "gulp-jshint": "~1.9.2",
+    "gulp-livereload": "~3.7.0",
+    "gulp-minify-css": "~0.4.5",
+    "gulp-plumber": "~0.6.6",
+    "gulp-rename": "~1.2.0",
+    "gulp-sass": "~1.3.3",
+    "gulp-scss-lint": "~0.1.7",
+    "gulp-sourcemaps": "~1.3.0",
+    "gulp-uglify": "~1.1.0",
+    "gulp-concat": "~2.4.3",
+    "vinyl-buffer": "~1.0.0",
+    "vinyl-source-stream": "~1.0.0",
+    "uglifyify": "~3.0.1",
+    "merge-stream": "~0.1.7",
+    "underscore": "~1.8.2",
+    "vinyl-transform": "~1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eenvoud Media",
+  "license": "BSD-2-Clause"
+}

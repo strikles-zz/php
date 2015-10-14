@@ -1,0 +1,56 @@
+footer {
+
+	@media (min-width: $screen-sm) {
+		margin-top: 7.5rem;
+	}
+
+	@media (max-width: $screen-sm-min) {
+		margin-top: 0.6rem;
+	}
+
+	padding-bottom: 2rem;
+
+	.social {
+
+		a {
+			@media (max-width: $screen-sm-min) {
+				padding: 0 5px;
+			}
+
+			@media (min-width: $screen-sm) {
+				padding: 0 10px;
+			}
+
+			img {
+				display:inline;
+
+				@media (max-width: $screen-sm-min) {
+					width: 25px;
+					height: 25px;
+				}
+			}
+		}
+	}
+
+	.footer-links {
+		a, a:hover, a:link, a:active, a:visited {
+			padding: 0 20px;
+			color: inherit;
+			text-transform: uppercase;
+
+			&:last-child {
+				font-weight: 300;
+			}
+
+			@media (max-width: $screen-sm-min) {
+				display: block;
+				line-height: 5rem;
+				font-size: 1.4rem;
+			}
+
+			@media (min-width: $screen-sm) {
+				font-size: 1rem;
+			}
+		}
+	}
+}

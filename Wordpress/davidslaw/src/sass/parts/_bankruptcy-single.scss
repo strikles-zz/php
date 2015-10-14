@@ -1,0 +1,131 @@
+/*=================================================
+=            Bankruptcy Single Styling            =
+=================================================*/
+
+body .bankruptcy-single {
+
+	/*==========  Bankruptcy navigation  ==========*/
+
+	.bankruptcy-nav-bg {
+		background-color : $darkred;
+	}
+	.bankruptcy-navigation {
+		padding : 26px 0;
+		span,a {
+			text-decoration: none!important;
+
+			font-size 	: 2.0rem;
+			font-weight : 100;
+			color 		: #DBCECE;
+			.indent, .name {
+				font-weight : normal;
+			}
+			&.white{
+				color : $white;
+			}
+			&:hover {
+				color : $white;
+			}
+		}
+	}
+
+	/*==========  Bankruptcy entry  ==========*/
+
+	.bankruptcy-container {
+		padding-bottom : 50px;
+
+		/*==========  Bankruptcy general  ==========*/
+
+		.bankruptcy-item-single {
+			opacity:0;
+			padding-bottom : 50px;
+			h3,.h3 {
+				color 			: $blue;
+				font-size 		: 2.6rem;
+				font-weight 	: 500;
+				text-transform 	: uppercase;
+				padding 			: 40px 0 10px 0;
+				margin : 0;
+			}
+			.summary {
+				font-size 	: 1.2rem;
+				color 		: #8E8E8E;
+			}
+			.data {
+				table.datatable {
+					width : 100%;
+					tr {
+						font-size 	: 1.2rem;
+						font-weight : 600;
+						td.field_label {
+							color 	: #404040;
+							padding : 1rem 0;
+						}
+						td.value {
+							color 			: $blue;
+							padding 		: 1rem 0;
+							text-transform 	: uppercase;
+						}
+					}
+				}
+			}
+		}
+
+		/*==========  Bankruptcy reports  ==========*/
+
+		.reports {
+			margin : 36px 0 50px 15px;
+			.reports-title {
+				font-size 		: 2.6rem;
+				font-weight 	: medium;
+				text-transform 	: uppercase;
+				color 			: $white;
+				margin-bottom 	: 10px;
+			}
+			.reports-content {
+				color : $white;
+				.date {
+					color : #ede4d5;
+				}
+				a {
+					&:hover {
+						text-decoration : none;
+						color 			: inherit;
+					}
+					.report {
+						position 	: relative;
+						margin-left : 60px;
+						margin-bottom 	: 30px;
+						&:before {
+							content 		: '' 		;
+							background 		: url('../img/pdf-icon.png') no-repeat;
+							background-size : contain 	;
+							width 			: 40px 		;
+							height 			: 39px 		;
+							position 		: absolute 	;
+							top 			: -3px 		;
+							margin-left 	: -60px 	;
+						}
+						.title {
+							text-transform 	: uppercase;
+							color 			: $white;
+							font-size 		: 1.5rem;
+						}
+						.date {
+							text-transform 	: uppercase;
+							color 			: #ede4d5;
+							font-size 		: 1.3rem;
+						}
+						.title:hover,.date:hover{
+							color 			: inherit;
+							text-decoration : none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----  End of Bankruptcy Single Styling  ------*/
+

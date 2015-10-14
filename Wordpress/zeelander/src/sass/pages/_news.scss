@@ -1,0 +1,49 @@
+.news {
+
+	h2 {
+	  margin: 0;
+	}
+
+	.post-thumb img {
+		width: 100%;
+		height: auto;
+	}
+
+	.single-date {
+		color: $grey;
+		font-size: 12px;
+		margin-top: 23px;
+	}
+
+	.the_article {
+
+		&::nth-child(2n+1) {
+			clear:both;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			padding: 0 15px;
+
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+
+		.article-title {
+			text-transform: uppercase;
+			color: $darkgrey;
+			font-weight: normal;
+		}
+
+		.article-content {
+			margin-top: 1rem;
+		}
+
+		.article-link {
+			font-size: 12px;
+			color: $black;
+		}
+
+	}
+}

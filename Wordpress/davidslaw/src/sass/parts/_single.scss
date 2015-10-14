@@ -1,0 +1,221 @@
+
+
+/*=============================================
+=            Nieuws Pagina styling            =
+=============================================*/
+
+
+body .nieuws-container {
+
+	.archive-news-content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.archive-sidebar {
+		background-color: #683e3e;
+	}
+
+	.news-item-single {
+		padding: 50px 15px 50px 0;
+		opacity:0;
+		h3 {
+			margin-top 	: 0;
+			font-size 	: 2.4rem;
+			font-weight : normal;
+			color 		: $blue;
+			text-transform: uppercase;
+
+		}
+		p, li {
+			font-size 	: 1.2rem;
+			color 		: #8E8E8E;
+		}
+
+		ol {
+			counter-reset:li;
+			color 			: $black;
+			font-size 		: 1.2rem;
+			padding-left: 17px;
+			list-style-type: none;
+
+			li {
+				color 		: #8E8E8E;
+				position:relative;
+
+			}
+
+			li:before {
+				content:counter(li); /* Use the counter as content */
+				counter-increment:li; /* Increment the counter by 1 */
+			    position:absolute;
+			    top: 0;
+			    left:-18px;
+			    -moz-box-sizing:border-box;
+			    -webkit-box-sizing:border-box;
+			    box-sizing:border-box;
+			    width:2em;
+			}
+		}
+
+		ul {
+			color 			: $black;
+			list-style-type : square;
+			font-size 		: 1.2rem;
+			padding-left: 17px;
+
+			li {
+				list-style 	: none;
+				color 		: #8E8E8E;
+			}
+
+			li:before {
+				content 	:'\25A0';
+				display 	: block;
+				position 	: relative;
+				max-width 	: 0px;
+				max-height 	: 0px;
+				left 		: -18px;
+				top 		: -0px;
+				font-size 	: 8px;
+			}
+		}
+
+		.date-author {
+
+			margin-top 	 	: -10px ;
+			margin-bottom 	: 20px;
+			color 			: #858585;
+			span.date {
+				font-style 	 	: italic;
+				padding-right 	: 5px;
+				font-size 		: 1.2rem;
+			}
+			span.author {
+				padding-left 	: 5px;
+				font-size 		: 1.2rem;
+			}
+		}
+		.img-container {
+				max-width 		: 50% 	;
+				overflow 		: hidden;
+				padding-right  	: 20px 	;
+				padding-bottom 	: 10px 	;
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+		}
+	}
+	/*==========  Archive  ==========*/
+	.author-info {
+		padding: 50px 0 50px 30px;
+
+		@media (max-width: $screen-sm) {
+			padding: 50px 0 50px 0px;
+		}
+
+		.author-name {
+			font-size 		: 2.4rem;
+			text-transform 	: uppercase;
+			color 			: #fff;
+			margin-bottom 	: 14px;
+
+			a, a:hover {
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+		.author-content {
+			.author-picture {
+				width: 83px;
+				img {
+					max-width: 100%;
+				}
+			}
+			.author-description {
+				padding-left 	: 95px;
+				font-size 		: 1.2rem;
+				color 			: #ece3d7;
+			}
+		}
+	}
+	.archive {
+
+		padding: 50px 0 50px 30px;
+		background: url(../img/archief-icon.png) 30px 20px no-repeat;
+		min-height: 260px;
+
+		@media (max-width: $screen-sm) {
+			padding: 50px 0 50px 0px;
+		}
+
+		.archive-title {
+			font-size 		: 2.4rem;
+			color 			: $white;
+			text-transform 	: uppercase;
+		}
+		ul  {
+			list-style: none;
+			color: $white;
+			li {
+				@media (min-width : 0) {
+					font-size :1.6rem ;
+				}
+				@media (min-width : $screen-sm) {
+					font-size :2.0rem ;
+				}
+				@media (min-width : $screen-md) {
+					font-size :1.6rem ;
+				}
+				@media (min-width : $screen-lg) {
+					font-size :1.6rem ;
+				}
+				a {
+					color : $white ;
+
+				}
+				&:before {
+					content 		: '' 		;
+					background 		: url('../img/archive-dropdown.png') no-repeat;
+					background-size : contain 	;
+					width 			: 16px 		;
+					height 			: 7px 		;
+					position 		: absolute 	;
+					margin-left 	: -25px 	;
+					margin-top  	: 8px 		;
+				}
+				ul {
+					padding-left :0;
+					li {
+						&:before {
+							content 		: '' 		;
+							background 		: url('../img/downarrow-light.png') no-repeat;
+						}
+						a {
+							color: #c1b5b5;
+						}
+						@media (min-width : 0) {
+							font-size :1.4rem ;
+						}
+						@media (min-width : $screen-sm) {
+							font-size :1.6rem ;
+						}
+						@media (min-width : $screen-md) {
+							font-size :1.4rem ;
+						}
+						@media (min-width : $screen-lg) {
+							font-size :1.4rem ;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}
+
+
+/*-----  End of Nieuws Pagina styling  ------*/
+

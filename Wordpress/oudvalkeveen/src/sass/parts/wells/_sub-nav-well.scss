@@ -1,0 +1,82 @@
+/*===========================================
+=            Sub Navigation well            =
+===========================================*/
+
+
+.sub-menu {
+	position:relative;
+	display:none;
+	margin-top: 26px;
+	.sub-menu-content {
+		position:relative;
+		z-index: 1;
+		margin: 0 20px;
+		min-height: 50px;
+		color: $white;
+		> ul {
+			padding-left: 14px;
+			
+		}
+		ul {
+			li {
+				padding: 5px 0;
+				a {
+					color : $white;
+					font-weight:bold;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+	}
+	.sub-menu-bg{
+		position: absolute;
+		border-top: 300px solid $grey;
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+		width:100%;
+		z-index: 0;
+
+
+		.bottom{
+			position: absolute;
+			right: 0px;
+			left: 0px;
+			z-index: -1;
+			border-top: 37px solid #555;
+			bottom: -20px;
+			z-index: 1000;
+			border-radius: 12px 15px 15px 15px;
+			-webkit-transform: rotate(-5deg);
+			box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
+		}
+
+
+		.top {
+			position: absolute;
+			right: -10px;
+			left: -10px;
+			border-top: 30px solid $grey;
+			top: -212px;
+			z-index: -100;
+			border-radius: 15px 15px 15px 15px;
+		}
+
+	}
+
+	&.green {
+		.sub-menu-bg{
+			border-top-color: $green !important;
+			.bottom {
+				border-color: $green;
+			}
+			.top {
+				border-color: $green;
+			}
+		}
+	}
+}
+
+/*-----  End of Sub Navigation well  ------*/

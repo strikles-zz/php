@@ -1,0 +1,31 @@
+#vboxOverlay {
+	z-index:2000;
+}
+
+#volorbox {
+	z-index:2001;
+}
+
+.pictures-list {
+
+	.row {
+		margin: 20px 0;
+
+		.minithumb {
+			max-width: 75px;
+			max-height: 75px;
+		}
+
+		button.btn-delete {
+			position: absolute;
+			top: 0;
+			left: 15px;
+			background-color: #fff;
+
+			&:hover {
+				color: $rood;
+			}
+		}
+	}
+}
+

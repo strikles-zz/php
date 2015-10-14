@@ -1,0 +1,43 @@
+.header-wrapper {
+	position: relative;
+
+	.header-content {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		color: $white;
+		font-size: 16px;
+		z-index: 9;
+
+		.group-logo {
+			vertical-align: bottom;
+		}
+
+		.user-logo {
+			border: 1px solid rgba(255, 255, 255, 0.2)
+		}
+
+		.home-header {
+			color: $white;
+			margin-top: 10rem;
+
+			.header-text {
+				font-size: 3rem;
+			}
+
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+
+		// @media(min-width: 768px) {
+		// 	.home-header {
+		// 		margin-top: 14rem;
+		// 	}
+		// }
+	}
+}
+

@@ -1,0 +1,37 @@
+linters:
+  BorderZero:
+    enabled: false
+  CapitalizationInSelector:
+    enabled: false
+  Comment:
+    enabled: false
+  EmptyLineBetweenBlocks:
+    enabled: false
+  EmptyRule:
+    enabled: false
+  FinalNewline:
+    enabled: false
+  HexLength:
+    enabled: false
+  IdWithExtraneousSelector:
+    enabled: false
+  Indentation:
+    enabled: false
+  LeadingZero:
+    enabled: false
+  MergeableSelector:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
+  SelectorDepth:
+    enabled: false
+  SingleLinePerSelector:
+    enabled: false
+  SpaceAfterPropertyColon:
+    enabled: false
+  TrailingSemicolon:
+    enabled: false
+  UrlQuotes:
+    enabled: false
+  ZeroUnit:
+    enabled: false

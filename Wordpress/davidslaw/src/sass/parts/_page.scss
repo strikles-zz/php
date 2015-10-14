@@ -1,0 +1,63 @@
+/*=================================================================
+=            Styling for custom page e.g. [front page]            =
+=================================================================*/
+
+.page-content {
+	.page-container {
+		//padding-bottom : 50px;
+		.custom-page-content {
+			opacity: 0;
+			padding-bottom : 50px;
+			h3,.h3 {
+				color 			: $blue;
+				font-size 		: 2.6rem;
+				font-weight 	: 500;
+				text-transform 	: uppercase;
+				padding 			: 50px 0 10px 0;
+				margin : 0;
+			}
+			.the-content {
+				font-size 	: 1.2rem;
+				color 		: #8E8E8E;
+				line-height : 2.2rem;
+				p {
+					margin-bottom : 20px;
+				}
+				ul {
+					color 			: $black;
+					list-style-type : square;
+					font-size 		: 1.2rem;
+					padding-left: 17px;
+					li {
+						list-style 	: none;
+						color 		: #8E8E8E;
+					}
+
+					li:before {
+						content 	:'\25A0';
+						display 	: block;
+						position 	: relative;
+						max-width 	: 0px;
+						max-height 	: 0px;
+						left 		: -18px;
+						top 		: -0px;
+						font-size 	: 8px;
+					}
+
+					// li {
+					// 	margin-bottom: 0px;
+					// 	span {
+					// 		color : #8E8E8E;
+					// 		font-size: 1.2rem;
+					// 	}
+					// }
+				}
+				strong {
+					color : $brown;
+				}
+			}
+		}
+	}
+}
+
+/*-----  End of Styling for custom page e.g. [front page]  ------*/

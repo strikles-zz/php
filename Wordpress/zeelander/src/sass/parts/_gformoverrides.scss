@@ -1,0 +1,54 @@
+#gform_1 {
+
+	label {
+		display: none;
+	}
+
+	#field_1_1, #field_1_2 {
+		margin-bottom: 0;
+	}
+
+	#field_1_1 {
+		border-right: 10px solid $white;
+	}
+
+	input[type=text], textarea {
+		background-color: $contactinput;
+		border: 0;
+		padding: 10px 20px;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.gform_button {
+		float: right;
+		background-color: $black;
+		color: $white;
+		padding: 5px 50px;
+		margin-right: 0;
+		font-size: 12px;
+		line-height: 16px;
+		border: 2px solid $black;
+		outline: none;
+
+		&:hover {
+			background: $white !important;
+			color: $black !important;
+		}
+	}
+
+	.gf_left_half {
+		width: 50% !important;
+		margin-right: 0 !important;
+	}
+
+	.gf_right_half {
+		width: 50% !important;
+	}
+}
+
+.gform_wrapper {
+	max-width: 100% !important;
+	margin: 0 !important;
+	box-sizing: border-box;
+}

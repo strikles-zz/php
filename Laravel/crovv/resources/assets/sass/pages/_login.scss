@@ -1,0 +1,42 @@
+.login-wrapper {
+	margin-top: 2rem;
+
+	.icon-linkedin {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		font-size: 20px;
+		font-weight: bold;
+		color: $white;
+		line-height: 30px;
+		text-align: center;
+		background: #46ada3;
+	}
+
+	.grey-container {
+		background-color: #eee;
+		padding: 2rem 4rem;
+	}
+
+	input {
+		border-radius: 0;
+	}
+
+	.btn-primary, .btn-register {
+		background: $black;
+		border: 0;
+		border-radius: 0;
+		color: $white;
+		outline: none;
+		padding: 1rem 1.5rem;
+		text-transform: uppercase;
+	}
+
+	.forgot {
+		background: $white;
+		font-size: 10px;
+		padding-left: 0;
+
+		color: $gray;
+	}
+}

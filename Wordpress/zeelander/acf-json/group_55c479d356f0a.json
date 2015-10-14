@@ -1,0 +1,105 @@
+{
+    "key": "group_55c479d356f0a",
+    "title": "Locations",
+    "fields": [
+        {
+            "key": "field_55c34ffd8ea9a",
+            "label": "locations",
+            "name": "locations",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "row",
+            "button_label": "Nieuwe regel",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_55c350368ea9b",
+                    "label": "title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "html",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55c350458ea9c",
+                    "label": "description",
+                    "name": "description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "br",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55c350578ea9d",
+                    "label": "location",
+                    "name": "location",
+                    "type": "google_map",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "center_lat": "",
+                    "center_lng": "",
+                    "zoom": 16,
+                    "height": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-locations"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1439368141
+}

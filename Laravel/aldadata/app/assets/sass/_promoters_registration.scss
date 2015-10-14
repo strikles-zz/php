@@ -1,0 +1,208 @@
+/* Ease Display */
+#promotersRegistrationRoot {
+    background: #f5f5f5;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+
+    font-family: Open Sans;
+    font-style: condensed;
+
+    /* form styling */
+    .form-container {
+        background:#f5f5f5;
+        height:100%;
+        position:relative;
+        text-align: center;
+        margin-bottom: 50px;
+
+        .page-header {
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            background-color:#25272d;
+            margin:0;
+            padding: 50px 0 10px;
+            z-index: 1029;
+            h2 {
+                text-align: left;
+                color: #fff;
+            }
+
+            .event-search {
+                background: #25272d;
+                border:0;
+                border-bottom: 1px solid #fff;
+                margin-top: 15px;
+                width: 100%;
+                line-height: 40px;
+                color: #fff;
+                padding: 0 15px;
+            }
+        }
+
+        .progress_buttons {
+            background: #f5f5f5;
+            position: fixed;
+            top: 120px;
+            left: 0; right: 0;
+            min-height: 60px;
+            z-index:1030;
+        }
+
+        .registration-content {
+            padding-bottom: 50px;
+            background: #f5f5f5;
+        }
+
+        /*progressbar*/
+        #progressbar {
+            position:absolute;
+            left:0;
+            right:0;
+            top: -10px;
+            overflow: hidden;
+            /*CSS counters to number the steps*/
+            counter-reset: step;
+            z-index: 1029;
+        }
+        #progressbar li {
+            list-style-type: none;
+            color: #ccc;
+            text-transform: uppercase;
+            font-size: 14px;
+            width: 33%;
+            float: left;
+            position: relative;
+
+            a {
+                display:inline-block;
+                color: #777;
+                pointer-events: none;
+                cursor: default;
+            }
+        }
+        #progressbar li:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 20px;
+            line-height: 20px;
+            display: block;
+            font-size: 10px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 0 auto 5px;
+            color: #ccc;
+        }
+        /*progressbar connectors*/
+        #progressbar li:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: #ccc;
+            position: absolute;
+            left: -50%;
+            top: 9px;
+            z-index: -1;
+        }
+        #progressbar li:first-child:after {
+            /*connector not needed before the first step*/
+            content: none;
+        }
+        /*marking active/completed steps green*/
+        /*The number of the step and the connector before it = green*/
+        #progressbar li.active:before,  #progressbar li.active:after {
+            background: #c80435;
+            color: #c80435;
+        }
+    }
+
+    .registration_buttons {
+        margin-top: 50px;
+        a {
+            color: #fff;
+            border-radius: 0;
+            background: #25272d;
+
+            &.registration_prev span {
+                //padding-left:25px;
+                background:url(/assets/img/registration_left.png)
+                no-repeat center center;
+                display: inline-block;
+                height: 17px;
+                width: 20px;
+                margin-bottom: -3px;
+            }
+
+            &.registration_next span {
+                //padding-left:25px;
+                background:url(/assets/img/registration_right.png)
+                no-repeat center center;
+                display: inline-block;
+                height: 17px;
+                width: 20px;
+                margin-bottom: -3px;
+            }
+        }
+    }
+
+    /* numbered buttons */
+    .status-buttons {
+        background:#151515;
+
+        a {
+            margin: 15px;
+            width: 90%;
+            color:#333;
+            display:inline-block;
+            font-size:16px;
+            text-align:center;
+            text-transform:uppercase;
+
+            &:hover {
+                text-decoration:none;
+            }
+        }
+    }
+
+    .form-views {
+        width: auto;
+        margin-top: 200px;
+        -moz-box-shadow:    0px 0px 1px 2px #ccc;
+        -webkit-box-shadow: 0px 0px 1px 2px #ccc;
+        box-shadow:         0px 0px 1px 2px #ccc;
+        padding: 30px 50px;
+        z-index: 1027;
+
+        .form-group {
+
+            input {
+                background:#f5f5f5;
+                border-radius:0;
+                border: 0;
+                border-bottom: 1px solid #ccc;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }
+        }
+
+        .form-group.has-error {
+
+            position: relative;
+            input {
+                border-bottom: 1px solid #c80435 !important;
+            }
+
+            span {
+                position: absolute;
+                right:0;
+                top:5px;
+            }
+
+        }
+    }
+}

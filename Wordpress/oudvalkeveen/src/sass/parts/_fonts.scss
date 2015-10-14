@@ -1,0 +1,97 @@
+/*=============================
+=            FONTS            =
+=============================*/
+
+
+	/*==================================
+	=            Font faces            =
+	==================================*/
+
+		/*==========  Cubano  ==========*/
+
+		@font-face {
+			font-family : 'Cubano';
+			src 		: local('Cubano'),  url(../fonts/Cubano/Cubano.ttf) format('truetype');
+		}
+
+		@font-face {
+			font-family : 'Dosis';
+			src 		: local('Dosis'),  url(../fonts/Dosis/Dosis-Regular.ttf) format('truetype');
+		}
+		@font-face {
+			font-family : 'Dosis';
+			font-weight : bold;
+			src 		: local('Dosis'),  url(../fonts/Dosis/Dosis-Bold.ttf) format('truetype');
+		}
+
+		@font-face{
+			font-family:'TerminalDosisBold';
+			src:url("/styles/fonts/terminaldosis/terminaldosis-bold-webfont.eot");
+			src:url("/styles/fonts/terminaldosis/terminaldosis-bold-webfont.eot?#iefix") format("embedded-opentype"),url("/styles/fonts/terminaldosis/terminaldosis-bold-webfont.woff") format("woff"),url("/styles/fonts/terminaldosis/terminaldosis-bold-webfont.ttf") format("truetype"),url("/styles/fonts/terminaldosis/terminaldosis-bold-webfont.svg#TerminalDosisBold") format("svg");
+		}
+
+	/*-----  End of Font faces  ------*/
+
+	/*===========================================
+	=            General font styles            =
+	===========================================*/
+
+	h1 {
+		margin-top: 0;
+		color: $white;
+		text-transform: uppercase;
+		font-family: 'Cubano';
+		text-shadow: 5px 8px 6px rgba(0,0,0,0.25);
+	}
+	h2 {
+		/*==========  Mobile  ==========*/
+		@media (max-width: $mobile-max) {
+			font-size: 22px;
+		}
+	}
+	h3 {
+		font-family: 'Dosis';
+		font-weight: bold;
+		font-size: 20px;
+	}
+	/*==========  Colors  ==========*/
+
+	.white {
+		color: $white;
+	}
+	.red {
+		color: $red;
+	}
+	.yellow {
+		color: $yellow;
+	}
+	.orangeyellow {
+		color: $orangeyellow;
+	}
+	.orange {
+		color: $orangetext;
+	}
+	.darkorange {
+		color: $darkorange;
+	}
+	.blue {
+		color: $blue;
+	}
+	.darkblue {
+		color: $marineblue;
+	}
+	.green {
+		color: $green;
+	}
+	.pink {
+		color: $pink;
+	}
+
+
+	/*-----  End of General font styles  ------*/
+
+
+
+
+/*-----  End of FONTS  ------*/
+

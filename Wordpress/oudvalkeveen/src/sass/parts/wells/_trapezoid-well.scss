@@ -1,0 +1,132 @@
+/*======================================
+=            Trapezoid Well            =
+======================================*/
+
+.trapezoid {
+	position:relative;
+	opacity: 0;
+	.trapezoid-content {
+		position:relative;
+		z-index: 1001;
+		margin: 0 20px;
+		min-height: 50px;
+		color: $white;
+
+	}
+	.trapezoid-bg{
+		position: absolute;
+		border-top: 200px solid $grey;
+		border-right: 25px solid transparent;
+		border-left: 25px solid transparent;
+		width:100%;
+
+		.bottom{
+			position: absolute;
+			right: 0px;
+			left: 0px;
+			border-top: 30px solid #000;
+			bottom: -11px;
+			z-index: 1000;
+			border-radius: 15px 15px 15px 15px;
+			box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
+		}
+
+
+		.top {
+			position: absolute;
+			right: -25px;
+			left: -25px;
+			border-top: 30px solid $grey;
+			top: -212px;
+			z-index: -100;
+			border-radius: 15px 15px 15px 15px;
+		}
+
+	}
+	&.white {
+		.trapezoid-content {
+			color: $black;
+		}
+		.trapezoid-bg{
+			border-top-color: $white !important;
+			.bottom {
+				border-color: $white;
+			}
+			.top {
+				border-color: $white;
+			}
+		}
+	}
+	&.red {
+		.trapezoid-bg{
+			border-top-color: $red !important;
+			.bottom {
+				border-color: $red;
+			}
+			.top {
+				border-color: $red;
+			}
+		}
+	}
+	&.yellow {
+		.trapezoid-bg{
+			border-top-color: $yellow !important;
+			.bottom {
+				border-color: $yellow;
+			}
+			.top {
+				border-color: $yellow;
+			}
+		}
+	}
+	&.light-blue {
+		.trapezoid-content {
+			color: $black;
+		}
+		.trapezoid-bg{
+			border-top-color: $lightblue !important;
+			.bottom {
+				border-color: $lightblue;
+			}
+			.top {
+				border-color: $lightblue;
+			}
+		}
+	}
+	&.blue {
+		.trapezoid-bg{
+			border-top-color: $blue !important;
+			.bottom {
+				border-color: $blue;
+			}
+			.top {
+				border-color: $blue;
+			}
+		}
+	}
+	&.green {
+		.trapezoid-bg{
+			border-top-color: $green !important;
+			.bottom {
+				border-color: $green;
+			}
+			.top {
+				border-color: $green;
+			}
+		}
+	}
+	&.pink {
+		.trapezoid-bg{
+			border-top-color: $pink !important;
+			.bottom {
+				border-color: $pink;
+			}
+			.top {
+				border-color: $pink;
+			}
+		}
+	}
+
+}
+
+/*-----  End of Trapezoid Well  ------*/

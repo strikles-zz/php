@@ -1,0 +1,23 @@
+
+
+
+        	/* 180 */
+        	&[data-group-id="439"] {color: $q180-cat1}
+        	&[data-group-id="440"] {color: $q180-cat3}
+        	&[data-group-id="441"] {color: $q180-cat5}
+        	&[data-group-id="442"] {color: $q180-cat4}
+        	&[data-group-id="443"] {color: $q180-cat2}
+
+        	&[data-group-id="444"] {color: $q180-cat1}
+        	&[data-group-id="445"] {color: $q180-cat3}
+        	&[data-group-id="446"] {color: $q180-cat5}
+        	&[data-group-id="447"] {color: $q180-cat4}
+        	&[data-group-id="448"] {color: $q180-cat2}
+
+
+        	/* 360 */
+        	&[data-group-id="435"] {color: $q180-cat1}
+        	&[data-group-id="434"] {color: $q180-cat3}
+        	&[data-group-id="433"] {color: $q180-cat5}
+        	&[data-group-id="431"] {color: $q180-cat4}
+        	&[data-group-id="432"] {color: $q180-cat2}

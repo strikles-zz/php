@@ -1,0 +1,28 @@
+#content {
+
+	.fotoboek {
+		margin-top: 50px;
+		.foto-container {
+			margin:  0 auto;
+			margin-bottom: 50px;
+
+			&.right{
+				-ms-transform: rotate(10deg); /* IE 9 */
+				-webkit-transform: rotate(10deg); /* Safari */
+				transform: rotate(10deg);
+			}
+			&.left{
+				-ms-transform: rotate(-10deg); /* IE 9 */
+				-webkit-transform: rotate(-10deg); /* Safari */
+				transform: rotate(-10deg);
+			}
+			padding: 15px;
+			display: inline-block;
+			background-color: $white;
+			max-width: 100%;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}

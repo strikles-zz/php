@@ -1,0 +1,34 @@
+{
+  "name": "alda",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://eenvoud@bitbucket.org/eenvoudmedia/aldadata.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp-rename": "~1.2.2",
+    "del": "~1.1.1",
+    "gulp-plumber": "~1.0.0",
+    "gulp-livereload": "~3.8.0",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp": "~3.8.11",
+    "gulp-ftp": "~1.0.3",
+    "gulp-jshint": "~1.10.0",
+    "gulp-scss-lint": "~0.1.12",
+    "gulp-concat": "~2.5.2",
+    "vinyl-transform": "~1.0.0",
+    "browserify": "~9.0.8",
+    "stripify": "~3.0.0",
+    "gulp-imagemin": "~2.2.1",
+    "gulp-sass": "~1.3.3",
+    "vinyl-source-stream": "~1.1.0",
+    "uglifyify": "~3.0.1"
+  }
+}

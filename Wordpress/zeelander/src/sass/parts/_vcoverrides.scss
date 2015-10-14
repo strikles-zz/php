@@ -1,0 +1,60 @@
+.vc_button-2-wrapper {
+	display: block !important;
+	margin: 5px 0;
+
+	@media (max-width: $screen-sm-min) {
+		width: 100%;
+
+		.vc_btn {
+			width: 100%;
+			text-align: center !important;
+		}
+	}
+
+	.vc_btn {
+		font-size: 12px !important;
+		box-sizing: border-box;
+	}
+
+	.vc_btn-lg, a.vc_btn-lg, button.vc_btn-lg {
+		padding: 10px 50px !important;
+	}
+
+	/* white button */
+	.vc_btn-black.vc_btn_square_outlined {
+
+		&:hover {
+			border: 2px solid $black;
+			background: $black !important;
+			color: $white !important;
+		}
+	}
+
+	/* black button */
+	.vc_btn-black.vc_btn_square {
+		border: 2px solid $black;
+
+		&:hover {
+			background: $white !important;
+			color: $black !important;
+			border: 2px solid $black;
+		}
+	}
+}
+
+
+.row .wpb_content_element {
+	margin-bottom: $row-margin-lg;
+
+	@media (max-width: $screen-md) {
+		margin-bottom: $row-margin-md;
+	}
+
+	@media (max-width: $screen-sm) {
+		margin-bottom: $row-margin-sm;
+	}
+
+	@media (max-width: $screen-xs) {
+		margin-bottom: $row-margin-xs;
+	}
+}

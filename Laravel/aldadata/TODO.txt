@@ -1,0 +1,43 @@
+// urgent
+4 x _image something volorbox
+1 x search
+2 x typeaheads
+3 x formcontrols js
+5 x right menu overflow on resize
+6 x delete modals positioning
+
+// main
+4 - summaries (cleanup + fill)
+3 x task urls
+2 x taskevent notifications depending on type
+1 x attach users to events
+
+// angular urgent
+2 - undefined event @random (verify it still occurs)
+1 x set active
+
+
+
+
+
+
+
+// angular main
+1 - angular scope object vars
+3 x angular + laravel yyyy-mm-dd instead of dd-mm-yyyy -> clean dates
+2 x verify s3 file renaming
+
+// cleanup
+4 - js cleanup (+ browserify-shim ?)
+5 - controllers + routes cleanup
+
+// angular cleanup
+1 - create separate eventforms controller
+2 - create separate taskfile controller
+3 - merge promoters registration with promoters main ?
+4 - directives
+
+// ideas
+1 - notifications
+2 - help wizard
+3 - redo whole admin frontend in angular + L5

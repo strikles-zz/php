@@ -1,0 +1,19 @@
+body.page-template-template-tickets, body.page-template-template-abonnementen {
+
+	iframe#eticket-iframe {
+		margin-top: 8px;
+		height:800px;
+	}
+
+	@media (max-width: $screen-sm) {
+		#content {
+			margin-left: 0;
+			margin-right: 0;
+
+			> .container {
+				// padding-left: 0;
+				// padding-right: 0;
+			}
+		}
+	}
+}

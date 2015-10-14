@@ -1,0 +1,229 @@
+.slider-container {
+	position: relative;
+	z-index:0;
+	max-height: 100%;
+
+	@media (min-width: $screen-lg)	 {
+		@include calc(height, '77vh - 122px');
+	}
+	@media (min-width: $screen-md) and (max-width: $screen-lg-min) {
+		height: 45rem;
+	}
+	@media (min-width: $screen-xs)	and (max-width: $screen-md-min)	 {
+		height: 35rem;
+	}
+	@media (max-width: $screen-xs-min)	 {
+		height: 22rem;
+	}
+
+	.slide {
+		height:100%;
+		width:100%;
+		position: absolute;
+		left:0;
+		top:0;
+		opacity: 0;
+		z-index: 10;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		.slide-container {
+
+			.titel, .ondertitel  {
+				font-weight: 300 !important;
+			}
+
+			.titel, .ondertitel, .slide-action {
+				color: $white;
+			}
+
+			.slide-action {
+				font-weight: normal;
+				display: inline-block;
+				margin-top: 1.6rem;
+				margin-left: 3px;
+				border: 1px solid $white;
+				padding: 5px 30px;
+			}
+
+			@media (min-width: $screen-lg)	 {
+				margin-right: 10rem;
+				margin-top: 10rem;
+				margin-left: 45%;
+
+				.titel {
+					font-size: 50px;
+					font-weight: 300 !important;
+				}
+
+				.ondertitel {
+					font-size: 27px;
+					font-weight: 300;
+				}
+
+				.slide-action {
+					font-size: 12px;
+				}
+			}
+			@media (min-width: $screen-md) and (max-width: $screen-lg-min) {
+				margin-right: 10rem;
+				margin-top: 9rem;
+				margin-left: 45%;
+
+				.titel {
+					font-size: 35px;
+				}
+
+				.ondertitel {
+					font-size: 20px;
+				}
+
+				.slide-action {
+					font-size: 12px;
+				}
+			}
+			@media (min-width: $screen-xs)	and (max-width: $screen-md-min)	 {
+				margin-right: 10rem;
+				margin-top: 10rem;
+				margin-left: 50%;
+
+				.titel {
+					font-size: 20px;
+				}
+
+				.ondertitel {
+					font-size: 12px;
+				}
+
+				.slide-action {
+					font-size: 12px;
+				}
+			}
+			@media (max-width: $screen-xs-min)	 {
+				margin-right: 5rem;
+				margin-top: 2rem;
+				margin-left: 50%;
+
+				.titel {
+					font-size: 20px;
+					margin-bottom: 0;
+				}
+
+				.ondertitel {
+					font-size: 12px;
+				}
+
+				.slide-action {
+					font-size: 10px;
+					color: $black !important;
+					background-color: $white;
+					margin-top: 0;
+					margin-left: 0;
+					padding: 5px 20px;
+				}
+			}
+		}
+	}
+
+	.arrow {
+		position: absolute;
+		bottom: 50%;
+		height: 32px;
+		width: 32px;
+		font-size: 10rem;
+		z-index: 11;
+
+		@media (max-width: 680px){
+			display:none;
+		}
+
+		&.left {
+			left:5rem;
+		}
+
+		&.right {
+			right: 5rem;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.dots-bottom {
+		position: absolute;
+		z-index:12;
+		bottom: 1rem;
+		left: 50%;
+		width: 20rem;
+		margin-left: -10rem;
+		text-align: center;
+
+		.dot {
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			background-color: $white;
+			opacity: 1;
+			border-radius: 4px;
+			&.active {
+				background-color: $dotbackground;
+
+			}
+		}
+	}
+
+}
+
+
+
+/*-----  End of Slider styling  ------*/
+
+/*=======================================
+=            Heading styling            =
+=======================================*/
+header {
+	.slider-container {
+		height: 90rem;
+		.slide {
+			background-size: cover;
+		}
+		.container.relative {
+			height: 90rem;
+			position: relative;
+		}
+		@media (max-width: $screen-md)	 {
+			height: 56rem;
+			.container.relative {
+				height: 56rem;
+			}
+		}
+		@media (max-width: $screen-xs)	 {
+			height: 56rem;
+			.container.relative {
+				height: 56rem;
+			}
+		}
+	}
+	.arrow {
+		bottom: 5rem;
+		height: 32px;
+		width: 32px;
+		&.left {
+			left:0;
+			margin-left: 5%;
+		}
+
+		&.right {
+			right: 0;
+			margin-right: 5%;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	.dots-bottom {
+		bottom: 8rem;
+	}
+}

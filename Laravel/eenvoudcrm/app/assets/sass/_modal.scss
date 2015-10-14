@@ -1,0 +1,31 @@
+#cboxOverlay {
+	z-index: 1000;
+}
+
+#cboxClose {
+	display:none;
+}
+
+#colorbox {
+	z-index: 1100;
+}
+
+.modal-backdrop {
+	z-index: 2000;
+}
+
+#ajax-modal {
+/*  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  visibility:visible!important;
+*/
+  z-index: 3000;
+  top:20%;
+  margin-left:7rem;
+  margin-right:7rem;
+  margin-top:0!important;
+  overflow-y:hidden;
+}

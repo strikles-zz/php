@@ -1,0 +1,40 @@
+//@import 'font-awesome/font-awesome';
+//@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
+@import 'variables';
+@import 'base';
+
+// parts
+@import 'parts/columns';
+@import 'parts/navbar';
+@import 'parts/footer';
+@import 'parts/gformoverrides';
+@import 'parts/vcoverrides';
+@import 'parts/archive';
+@import 'parts/events';
+@import 'parts/single';
+@import 'parts/slider';
+
+// pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/news';
+@import 'pages/yachts';
+@import 'pages/singleyachts';
+
+// RETINA (2x RESOLUTION DEVICES)
+// This applies to the retina iPhone (4s) and iPad (2,3) along with
+// other displays with a 2x resolution. You can also create a media
+// query for retina AND a certain size if you want. Go Nuts.
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+
+  // styles in 2x.scss
+  @import '2x';
+
+} // end of media query
+

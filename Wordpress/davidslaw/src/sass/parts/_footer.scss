@@ -1,0 +1,158 @@
+/*======================================
+=            Footer styling            =
+======================================*/
+
+footer {
+	background-color 	: #476474;
+	color 				: $white;
+	font-family 		: 'Roboto';
+	padding-bottom 		: 80px;
+
+	.footer-title {
+		margin-top 		: 80px;
+		@media(max-width: $screen-sm) {
+			margin-top: 50px;
+
+			&.half-margin-mobile {
+				margin-top: 30px;
+			}
+		}
+		font-size 		: 2.6rem;
+		text-transform 	: uppercase;
+
+		.footer-subtitle {
+			display 		: inline;
+			text-transform 	: none;
+			font-size 		: 1.7rem;
+			color: $lightbluegrey;
+		}
+	}
+	.footer-textfield {
+		margin-top: 7px;
+		color: $lightbluegrey;
+		font-weight: 100;
+		margin-bottom:20px;
+
+	}
+	.footer-form {
+
+	}
+	.footers-footer {
+
+		border-top 	: 2px solid $borderblue;
+		.logo {
+			margin-top : 30px;
+		}
+		.footers-footertext {
+			margin-top : 30px;
+			font-size: 1.1rem;
+			color: $lightbluegrey;
+			font-weight: 100;
+			a {
+				font-weight: bold;
+				margin-bottom: 10px;
+				line-height: 24px;
+				i {
+					font-size: 3.0rem;
+					margin-right: 5px;
+				}
+
+				color: #fff;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	/*==========  Contact form: Gravity form  ==========*/
+	.gform_confirmation_message_1 {
+		padding: 30px 25%;
+		width:100%;
+		text-align:center;
+
+	}
+	.gform_wrapper {
+
+		.gform_body {
+			.validation_message {
+				display: none;
+			}
+
+			.ginput_container {
+				input, textarea {
+					border: none;
+					background-color: #2e414c;
+					padding: 10px;
+					margin-bottom: 3px;
+					width: 100% !important;
+
+
+
+					&::-webkit-input-placeholder {
+						opacity: 1;
+						-webkit-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+					&:-moz-placeholder {
+						opacity: 1;
+						-moz-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+					&::-moz-placeholder {
+						opacity: 1;
+						-moz-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+					&:-ms-input-placeholder {
+						opacity: 1;
+						-ms-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+
+					/* Place Holder CSS for Focus */
+					&:focus::-webkit-input-placeholder {
+						opacity: 0.2;
+						-webkit-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+					&:focus:-moz-placeholder {
+						opacity: 0.2;
+						-moz-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+					&:focus::-moz-placeholder {
+						opacity: 0.2;
+						-moz-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+					&:focus:-ms-input-placeholder {
+						opacity: 0.2;
+						-ms-transition: opacity 0.3s ease-in-out;
+						transition: opacity 0.3s ease-in-out;
+					}
+
+				}
+
+				textarea {
+					height: 136px;
+				}
+			}
+		}
+		.gform_footer  {
+			text-align: right;
+			margin-top: 0;
+			padding-top :0;
+			.gform_button {
+				border:none;
+				background: none;
+				font-size: 1.8rem;
+				font-weight: 400;
+			}
+		}
+	}
+
+}
+
+/*-----  End of Footer styling  ------*/
+

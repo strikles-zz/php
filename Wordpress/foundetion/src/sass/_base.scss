@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+  background-color: $white;
+}
+
+html body {
+	font-size: 2rem;
+	line-height: 2.6rem;
+}
+
+//=========  WP login logo  ========== NOTE: should go to admin css*/
+.login h1 a {
+  background: url('../img/login-logo.png') no-repeat top center;
+  display: block;
+  height: 6.7rem;
+  overflow: hidden;
+  padding-bottom: 15px;
+  text-indent: -9999px;
+  width: 32.6rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	color: $title-orange;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+

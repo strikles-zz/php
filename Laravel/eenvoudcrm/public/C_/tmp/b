@@ -1,0 +1,35 @@
+SELECT  * FROM  `worklogs` WHERE `worklogs`.`id` = :where_0 
+UPDATE  `worklogs` SET  `id` = :id, `date` = :date, `company_id` = :company_id, `project_id` = :project_id, `user_id` = :user_id, `hours` = :hours, `description` = :description, `comment` = :comment, `billable` = :billable, `processed` = :processed WHERE `worklogs`.`id` = :where_0 
+SELECT DISTINCT  `id` as value, `bedrijfsnaam` as label FROM  `companies` 
+SELECT DISTINCT  `id` as value, `name` as label FROM  `projects` 
+SELECT DISTINCT  `id` as value, `username` as label FROM  `users` 
+SELECT  * FROM  `worklogs` WHERE `worklogs`.`id` = :where_0 
+UPDATE  `worklogs` SET  `id` = :id, `date` = :date, `company_id` = :company_id, `project_id` = :project_id, `user_id` = :user_id, `hours` = :hours, `description` = :description, `comment` = :comment, `billable` = :billable, `processed` = :processed WHERE `worklogs`.`id` = :where_0 
+SELECT DISTINCT  `id` as value, `bedrijfsnaam` as label FROM  `companies` 
+SELECT DISTINCT  `id` as value, `name` as label FROM  `projects` 
+SELECT DISTINCT  `id` as value, `username` as label FROM  `users` 
+SELECT  * FROM  `worklogs` WHERE `worklogs`.`id` = :where_0 
+UPDATE  `worklogs` SET  `id` = :id, `date` = :date, `company_id` = :company_id, `project_id` = :project_id, `user_id` = :user_id, `hours` = :hours, `description` = :description, `comment` = :comment, `billable` = :billable, `processed` = :processed WHERE `worklogs`.`id` = :where_0 
+SELECT DISTINCT  `id` as value, `bedrijfsnaam` as label FROM  `companies` 
+SELECT DISTINCT  `id` as value, `name` as label FROM  `projects` 
+SELECT DISTINCT  `id` as value, `username` as label FROM  `users` 
+SELECT  * FROM  `worklogs` WHERE `worklogs`.`id` = :where_0 
+UPDATE  `worklogs` SET  `id` = :id, `date` = :date, `company_id` = :company_id, `project_id` = :project_id, `user_id` = :user_id, `hours` = :hours, `description` = :description, `comment` = :comment, `billable` = :billable, `processed` = :processed WHERE `worklogs`.`id` = :where_0 
+SELECT DISTINCT  `id` as value, `bedrijfsnaam` as label FROM  `companies` 
+SELECT DISTINCT  `id` as value, `name` as label FROM  `projects` 
+SELECT DISTINCT  `id` as value, `username` as label FROM  `users` 
+SELECT  * FROM  `worklogs` WHERE `worklogs`.`id` = :where_0 
+UPDATE  `worklogs` SET  `id` = :id, `date` = :date, `company_id` = :company_id, `project_id` = :project_id, `user_id` = :user_id, `hours` = :hours, `description` = :description, `comment` = :comment, `billable` = :billable, `processed` = :processed WHERE `worklogs`.`id` = :where_0 
+SELECT DISTINCT  `id` as value, `bedrijfsnaam` as label FROM  `companies` 
+SELECT DISTINCT  `id` as value, `name` as label FROM  `projects` 
+SELECT DISTINCT  `id` as value, `username` as label FROM  `users` 
+SELECT  * FROM  `worklogs` WHERE `worklogs`.`id` = :where_0 
+UPDATE  `worklogs` SET  `id` = :id, `date` = :date, `company_id` = :company_id, `project_id` = :project_id, `user_id` = :user_id, `hours` = :hours, `description` = :description, `comment` = :comment, `billable` = :billable, `processed` = :processed WHERE `worklogs`.`id` = :where_0 
+SELECT DISTINCT  `id` as value, `bedrijfsnaam` as label FROM  `companies` 
+SELECT DISTINCT  `id` as value, `name` as label FROM  `projects` 
+SELECT DISTINCT  `id` as value, `username` as label FROM  `users` 
+SELECT  * FROM  `worklogs` WHERE `worklogs`.`id` = :where_0 
+UPDATE  `worklogs` SET  `id` = :id, `date` = :date, `company_id` = :company_id, `project_id` = :project_id, `user_id` = :user_id, `hours` = :hours, `description` = :description, `comment` = :comment, `billable` = :billable, `processed` = :processed WHERE `worklogs`.`id` = :where_0 
+SELECT DISTINCT  `id` as value, `bedrijfsnaam` as label FROM  `companies` 
+SELECT DISTINCT  `id` as value, `name` as label FROM  `projects` 
+SELECT DISTINCT  `id` as value, `username` as label FROM  `users` 

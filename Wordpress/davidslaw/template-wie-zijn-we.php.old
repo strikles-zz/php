@@ -1,0 +1,109 @@
+<?php
+/*
+Template Name: Wie Zijn We
+*/
+
+get_header();
+
+?>
+
+<div id="page-content" class="wie-zijn-we" >
+	<div class="container-fluid">
+		<div class="row no-overflow">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-sm-push-8">
+						<div class="fluid-bg top-bg bottom-bg">
+							<div class="background-color brown"></div>
+							<div class="inner employee-thumbnails">
+								<div class="title">
+									<?php echo __('Onze advocaten'); ?>
+								</div>
+								<div class="row">
+									<?php
+										while ( have_posts() ) : the_post();
+											$employees = get_field('employees');
+										endwhile;
+										$first = true;
+										foreach ($employees as $employee) {
+											$identifier = strtolower(preg_replace("/[^a-zA-Z0-9]+/", "", $employee['name']));
+									?>
+											<div class="col-sm-4 col-xs-2">
+												<div class="employee-thumbnail-container <?php if($first)echo 'active'; ?>" id="thumbnail-<?php echo $identifier; ?>" style="background:url(<?php echo $employee['thumbnail']['sizes']['author-picture'];?>)">
+													<img src="<?php echo $employee['thumbnail-grey']['sizes']['author-picture'];?>" alt="">
+												</div>
+											</div>
+									<?php
+											$first = false;
+										}
+									?>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8 col-sm-pull-4 fluid-bg-neighbour">
+						<div class="employees-container">
+							<div class="employee-background">
+							<?php
+								$first = true;
+								foreach ($employees as $employee) :
+								$identifier = strtolower(preg_replace("/[^a-zA-Z0-9]+/", "", $employee['name']));
+							?>
+								<img src="<?php echo $employee['profilepicture']['url'];?>" alt=""  style="<?php if (!$first) echo 'opacity:0;';?>" class="<?php if ($first) echo 'visible';?>" id="picture-<?php echo $identifier; ?>">
+							<?php
+								$first = false;
+								endforeach;
+							 ?>
+							</div>
+							<?php
+
+								$first = true;
+								foreach ($employees as $employee) :
+									//sanitize name for identifier
+									$identifier = strtolower(preg_replace("/[^a-zA-Z0-9]+/", "", $employee['name']));
+
+							?>
+								<div class="employee <?php if ($first) echo 'visible'; else echo 'hidden';?> " id="container-<?php echo $identifier; ?>">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="employee-content">
+												<div class="employee-name">
+													<?php 	echo $employee['name']; ?>
+												</div>
+												<div class="employee-function">
+													<?php 	echo $employee['profession']; ?>
+
+												</div>
+												<div class="employee-description">
+													<div class="row">
+														<div class="col-xs-8 col-md-7">
+													<?php 	echo $employee['description']; ?>
+														</div>
+													</div>
+
+												</div>
+
+												<div class="employee-contact">
+													<div class="row">
+														<div class="col-xs-8 col-md-7">
+															<?php 	echo $employee['contactdetails']; ?>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<?php
+										$first = false;
+									endforeach;
+								?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php get_footer(); ?>

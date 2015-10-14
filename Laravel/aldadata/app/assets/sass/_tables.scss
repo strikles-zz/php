@@ -1,0 +1,85 @@
+table, .table, table.table {
+	text-transform: uppercase;
+
+	> thead {
+		.sorting_asc, .sorting {
+		background-color: $lichtgrijs
+		}
+
+		> tr {
+			> th {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+#roles_filter {
+	input {
+		border: 1px solid $zwart;
+	}
+}
+
+#roles_paginate {
+	.pagination > .active {
+		> a, > a:hover, > a:focus, > span, > span:hover, > span:focus {
+			background: $rood;
+			border:1px solid $rood;
+		}
+	}
+}
+
+
+table.dataTable {
+	table-layout:fixed;
+	margin-top:1.4rem;
+
+	tr {
+		th, td {
+		  padding: 3px 0;
+		  overflow: hidden; /* this is what fixes the expansion */
+		  text-overflow: ellipsis; /* not supported in all browsers, but I accepted the tradeoff */
+		  white-space: nowrap;
+		}
+	}
+}
+
+.pagination>li>a, .pagination>li>span {
+	color: #777;
+
+	&:hover {
+		color: #777;
+	}
+}
+
+
+#roles_filter {
+	input[type=search] {
+		margin-left:1rem;
+		border: 1px solid $donkergrijs;
+	}
+}
+
+.dataTables_info {
+	margin: 20px 0;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 0.7rem;
+	text-transform: uppercase;
+}
+
+.dataTables_paginate {
+	text-transform: uppercase;
+}
+
+table.table thead {
+	.sorting_asc {
+		background: #eeeeee;
+	}
+	.sorting_desc {
+		background: #eeeeee;
+	}
+}
+
+

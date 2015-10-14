@@ -1,0 +1,44 @@
+.app-main {
+
+	.signin-registration {
+		padding: 50px;
+		background: $light-gray;
+
+		.btn-form {
+			border-radius: 0;
+			background: $black;
+			color: $white;
+		}
+	}
+
+	.content-wrapper {
+		background-color: $white;
+	}
+
+	#signin-form {
+
+		.signin-col {
+			border: 0!important;
+
+			.forgot {
+				background: $white;
+				font-size: 10px;
+				padding-left: 0;
+			}
+
+			.left-btn {
+				padding-left:0!important;
+			}
+
+			.right-btn {
+				padding-right:0!important;
+			}
+
+			.btn-form {
+				border-radius: 0;
+				background: $black;
+				color: $white;
+			}
+		}
+	}
+}

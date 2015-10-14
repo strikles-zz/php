@@ -1,0 +1,21 @@
+body.page-id-83 {
+
+	table {
+		width: 100%;
+		&.striped {
+			tr.odd {
+				background-color: $brightyellow;
+
+			}
+			padding: 0 5px;
+		}
+		a {
+			color: #333;
+			text-decoration: underline;
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+
+}

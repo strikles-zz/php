@@ -1,0 +1,109 @@
+<?php
+/*
+Template Name: News
+*/
+?>
+
+<?php
+
+get_header();
+the_post();
+
+$args = array(
+	'post_type'   => 'page',
+	'post_parent' => 262,
+	'posts_per_page' => 3
+);
+
+// the query
+$the_query = new WP_Query( $args );
+
+?>
+
+<div class="container single">
+	<div class="row top-gap">
+
+		<div class="row-sm-height">
+			<div class="col-sm-8 col-sm-height no-padding news-sidebar">
+
+				<div class="inside">
+					<div class="row">
+						<div class="col-xs-offset-1 col-xs-10">
+							<?php the_content(); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-sm-height">
+
+				<div class="inside">
+					<div class="row">
+						<div class="col-xs-offset-1 col-xs-10"><h2 class="text-center">events</h2></div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-offset-1 col-xs-10">
+							<?php if ( $the_query->have_posts() ) : ?>
+								<!-- pagination here -->
+								<!-- the loop -->
+								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+								<div class="row top-gap-sm">
+									<div class="col-sm-3">
+										<?php
+											$event_date_str = get_field('event_date');
+											$event_date = DateTime::createFromFormat('Ymd', $event_date_str);
+										?>
+
+										<div class="row">
+											<div class="col-xs-offset-1 col-xs-10 black-bkg">
+												<div class="row">
+													<div class="col-sm-12 text-center larger-font"><?php echo $event_date->format('d'); ?></div>
+												</div>
+												<div class="row">
+													<div class="col-sm-12 text-center"><?php echo $event_date->format('M'); ?></div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-sm-9">
+										<h4><?php the_title(); ?></h4>
+										<p><?php the_excerpt(); ?></p>
+
+										<div class="vc_button-2-wrapper">
+											<a href="<?php echo get_the_permalink($event->ID); ?>" class="vc_btn vc_btn_white vc_btn-white vc_btn_lg vc_btn-lg vc_btn_square vc_gitem-link">Learn More &gt;</a>
+										</div>
+									</div>
+								</div>
+								<?php endwhile; ?>
+								<!-- end of the loop -->
+								<!-- pagination here -->
+								<?php wp_reset_postdata(); ?>
+							<?php endif; ?>
+						</div>
+					</div>
+
+					<div class="row top-gap">
+						<div class="col-xs-offset-1 col-xs-10">
+
+							<div class="row archive-sidebar">
+								<div class="col-sm-12 top-gap">
+
+									<h2 class="text-center">archive</h2>
+									<div class="the_archive">
+										<?php wp_get_archives(array('type' => 'monthly', 'show_post_count' => true)); ?>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php get_footer(); ?>

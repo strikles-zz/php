@@ -1,0 +1,64 @@
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+background-color: inherit;
+margin-bottom: 0px !important;
+padding: none!important;
+border-top: none;
+border-bottom: none;
+padding-left:0!important;
+padding-right:0!important;
+margin:0;
+}
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  background-color:transparent!important;
+  border:none!important;
+}
+.gform_wrapper .top_label li.gfield.gfield_error.gf_left_half, .gform_wrapper .top_label li.gfield.gfield_error.gf_right_half {
+	width: 49%;
+  margin-top: .375em!important;
+}
+
+
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container {
+  margin-top: 0px;
+}
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+	margin-bottom: 8px!important;
+}
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+	padding:0!important;
+}
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container {
+	margin-right: 0px!important;
+}
+
+.gform_wrapper .top_label .gfield_error .ginput_container {
+	max-width: 100%;
+  margin: 0!important;
+}
+.gform_footer.top_label img {
+  display:none;
+}
+.ginput_container {
+  height: 38px;
+}
+textarea {
+  height: 141px;
+}
+body .gform_wrapper .top_label li.gfield.gfield_error.gf_left_half, body .gform_wrapper .top_label li.gfield.gfield_error.gf_right_half {
+  width: 50%!important;
+}
+@media only screen  and (max-width: 768px) {
+
+  .gform_wrapper .gform_body .top_label li.gfield.gf_right_half {
+    float: left;
+    clear: left !important;
+    width: 99%;
+  }
+
+  .gform_wrapper .gform_body .top_label li.gfield.gf_left_half {
+    float: left;
+    clear: left !important;
+    width: 99%;
+  }
+
+}

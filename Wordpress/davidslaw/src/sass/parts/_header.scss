@@ -1,0 +1,490 @@
+/*======================================
+=            Header styling            =
+======================================*/
+
+body.home header{
+	.header-single-image-container {
+		opacity: 0;
+	}
+}
+
+header {
+
+	/*==========  Navigation  ==========*/
+		background 	: $bluegrey;
+
+	nav.navbar.navbar-default {
+		border 		: none;
+		background 	: $bluegrey;
+		height 		: 56px;
+
+		.logo {
+			padding : 21px 0;
+			max-width 	: 90px;
+		}
+		.navbar-toggle {
+			margin-top 		: 19px;
+			border-radius 	: 0px;
+			&:hover,&:active,&:focus {
+				background-color 	:$bluegrey;
+				border-color 		:$white;
+			}
+			.icon-bar{
+				background-color: $white;
+			}
+		}
+		.navbar-collapse.in {
+			background-color : $bluegrey;
+			margin 			 : 0 -15px;
+			padding 		 : 0 15px;
+			border 			 : none;
+			box-shadow 		 : none;
+			position: relative;
+			z-index: 3;
+
+			li {
+				background-color 	: $bluegrey;
+				z-index 			: 3;
+				text-align 			: right;
+				&:hover{
+					background-color : $lightgrey;
+				}
+				a:hover{
+					color 			 : $bluegrey !important;
+				}
+			}
+		}
+		.navbar-nav {
+			margin-top: 0;
+		}
+		.in {
+			ul {
+				li {
+					&.active {
+						font-weight: bold;
+						a {
+							background-color : $white;
+							color 			 : $bluegrey;
+							&:hover,&:active,&:focus {
+								background-color : $white;
+								color 			 : $bluegrey;
+							}
+						}
+					}
+					&:hover {
+						background-color 	: $white !important;
+						font-weight 		: bold;
+						a {
+							background-color : $white;
+							color 			 : $bluegrey;
+						}
+					}
+					a {
+						color 			: $bluegrey;
+					}
+				}
+			}
+		}
+		/*==========  Dropdown menu  ==========*/
+		.dropdown-menu {
+			box-shadow 		 : none;
+			border 			 : none;
+			background-color : $white;
+			margin-top 		 : 10px;
+			padding 		 : 10px 0;
+			border-radius 	 : 0;
+			&:before
+			{
+				content 	: ' '		 ;
+				position 	: absolute   ;
+				width 		: 0			 ;
+				height 		: 0			 ;
+				right 		: 20px		 ;
+				top 		: -10px 	 ;
+				border-style: solid 	 ;
+
+				border-width: 0 10px 10px 10px ;
+				border-color: transparent transparent $white transparent;
+			}
+			.menu-item {
+				background-color: $white;
+				&.active,&:hover {
+					background-color: $white;
+				}
+				a {
+					text-align 			: right;
+					background-color 	: $white;
+					color 				: $bluegrey;
+					padding 			: 10px 20px;
+					&:hover {
+						background-color: $white;
+						color 			: #333;
+					}
+				}
+			}
+		}
+
+
+		ul{
+			li  {
+
+				&.active,&.open {
+
+					a {
+						background-color : $bluegrey;
+						color 			 : $white;
+						&:hover,&:active,&:focus {
+							background-color 	:$bluegrey;
+							border-color 		:$bluegrey;
+							color 			 : $white;
+						}
+					}
+				}
+				&.active {
+					font-weight : bold;
+				}
+				&:hover {
+					background-color : $bluegrey !important;
+					a {
+						background-color : $bluegrey;
+					}
+				}
+				a {
+					padding 		: 25px 10px 21px 10px;
+					color 			: $white;
+					font-size 		: 1.3rem;
+					&.lang {
+						font-size : 1.1rem;
+						padding-top: 26px;
+					}
+					&:hover{
+						color: $white;
+					}
+					text-transform 	: uppercase;
+					i {
+						font-size 	: 2.0rem;
+						margin-top 	: 0.2rem;
+					}
+				}
+				&#nav_searchform{
+					width 		: 0px;
+					margin-left : 10px;
+					.navbar-form {
+						margin-top 	: 20px;
+						padding 	: 0;
+
+						.form-group {
+							margin-bottom : 0px;
+							input {
+								border 			: none;
+								box-shadow 		: none;
+								-webkit-box-shadow: 0 0 0px 1000px $bluegrey inset;
+								border-radius 	: 0px;
+								padding 		: 0;
+								text-transform 	: uppercase;
+								font-size 		: 1.3rem;
+								color 			: $white;
+								background-color: transparent;
+								/* Place Holder CSS */
+								&::-webkit-input-placeholder {
+									color 			: $white;
+									opacity: 0;
+									-webkit-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+								&:-moz-placeholder {
+									color 			: $white;
+									opacity: 0;
+									-moz-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+								&::-moz-placeholder {
+									color 			: $white;
+									opacity: 0;
+									-moz-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+								&:-ms-input-placeholder {
+									color 			: $white;
+									opacity: 0;
+									-ms-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+
+								/* Place Holder CSS for Focus */
+								&.placeholder::-webkit-input-placeholder {
+									color 			: $white;
+									opacity: 1;
+									border-bottom 	: 2px solid $white;
+									-webkit-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+								&.placeholder:-moz-placeholder {
+									color 			: $white;
+									opacity: 1;
+									border-bottom 	: 2px solid $white;
+									-moz-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+								&.placeholder::-moz-placeholder {
+									color 			: $white;
+									opacity: 1;
+									border-bottom 	: 2px solid $white;
+									-moz-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+								&.placeholder:-ms-input-placeholder {
+									color 			: $white;
+									opacity: 1;
+									border-bottom 	: 2px solid $white;
+									-ms-transition: opacity 0.3s ease-in-out;
+									transition: opacity 0.3s ease-in-out;
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/*============================================
+		=            Navbar Media queries            =
+		============================================*/
+
+		@media (max-width: $screen-sm)	 {
+
+			height 		: 50px;
+			margin-bottom: 0px;
+			.logo {
+				padding : 14px 0;
+				height 	: 50px ;
+
+			}
+
+			.navbar-toggle {
+				margin 			: 0 -15px 0 0;
+				height 			: 50px;
+				width 			: 50px;
+				border-radius 	: 0px;
+				border 			: none;
+				padding 		: 14px;
+				&:hover,&:active,&:focus, {
+					background-color 	:$bluegrey;
+					.icon-bar{
+						background-color: $white;
+					}
+				}
+				.icon-bar{
+					background-color: $white;
+
+				}
+			}
+			.navbar-collapse.in {
+				background-color: $white;
+
+				li {
+
+					background-color: $white;
+					&.open {
+						a {
+							font-weight: bold;
+							background-color: $white;
+							color :$bluegrey;
+
+						}
+					}
+					a {
+						font-size: 1.4rem;
+						color :$bluegrey;
+						padding: 15px 15px 15px 15px;
+					}
+				}
+
+			}
+
+			.dropdown-menu {
+				background-color : $white;
+				margin-top 		 : -14px;
+				border-radius 	 : 0;
+				&:before
+				{
+					display:none;
+				}
+				li.menu-item {
+					background-color: $white;
+					&.active,&:hover {
+						background-color: $white;
+					}
+					a {
+						text-align 			: right;
+						font-size 			: 1.2rem;
+						font-weight 		: normal!important;
+						background-color 	: $white;
+						color 				: #d4dee5;
+						padding 			: 1px 15px;
+						&:hover {
+							background-color: $white;
+							color 			: $bluegrey;
+						}
+					}
+				}
+			}
+
+
+		}
+
+		/*-----  End of Navbar Media queries  ------*/
+
+	}//.navbar.navbar-default
+
+	/*=================================================================
+	=            Header background Single & Slider styling            =
+	=================================================================*/
+
+	.header-single-image-container {
+		position 			: relative;
+		width 				: 100%;
+		overflow 	 		: hidden;
+		background-position : center center!important;
+		background-size 	: cover!important;
+
+		// media queries on height:
+		height: 30rem;
+		@media (max-width: $screen-sm)	 {
+			height: 20rem;
+		}
+		@media (max-width: $screen-xs)	 {
+			height: 12.7rem;
+		}
+	}
+
+	.header-slider-container {
+		height: 43.5rem;
+		position: relative;
+		overflow-x: hidden;
+
+		.container.relative {
+			height: 43.5rem;
+			position: relative;
+		}
+		@media (max-width: $screen-sm)	 {
+			height: 30rem;
+			.container.relative {
+				height: 30rem;
+			}
+		}
+		@media (max-width: $screen-xs)	 {
+			height: 20rem;
+			.container.relative {
+				height: 20rem;
+			}
+		}
+		.slide {
+			height:100%;
+			width:100%;
+			position: absolute;
+			left:0;
+			top:0;
+			opacity: 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.arrow {
+			position: absolute;
+			top: 13rem;
+			font-size: 10rem;
+			z-index: 1;
+			@media (max-width: 950px){
+				display:none;
+			}
+			&.left {
+				left:0;
+				margin-left: 2rem;
+			}
+
+			&.right {
+				right: 0;
+				margin-right: 2rem;
+			}
+		}
+
+	}
+
+
+	/*-----  End of Header background Single & Slider styling  ------*/
+
+	/*=======================================
+	=            Heading styling            =
+	=======================================*/
+
+	h1,.h1,h2,.h2 {
+		color: $blue;
+		text-transform: uppercase;
+		position:relative;
+		z-index:2;
+
+	}
+	h1,.h1 {
+		display 		: inline-block!important;
+		margin-top 		: 7rem;
+		font-size 		: 4.0rem;
+		padding-bottom 	: 8px;
+		border-bottom 	: 1px solid $blue;
+		margin-bottom 	: 0;
+		max-width 		: 50rem;
+	}
+	.header-slider-container {
+		h1,.h1 {
+			margin-top: 13rem;
+
+			@media (max-width: $screen-sm)	 {
+				margin-top: 7rem;
+			}
+			@media (max-width: $screen-xs)	 {
+				margin-top: 3rem;
+			}
+
+		}
+	}
+
+	h2, .h2 {
+		margin-top 	: 10px;
+		font-size 	: 1.8rem;
+		max-width 	: 50rem;
+	}
+
+	@media (max-width: $screen-sm)	 {
+		h1,.h1 {
+			margin-top 		: 40px;
+			font-size 		: 2.4rem;
+			padding-bottom 	: 4px;
+			max-width 		: 24rem;
+		}
+		h2, .h2 {
+			font-size 	: 1.4rem;
+			margin-top 	: 6px;
+			max-width 	: 24rem;
+		}
+	}
+
+	@media (max-width: $screen-xs)	 {
+		h1,.h1 {
+			margin-top 		: 2.0rem;
+			font-size 		: 2.4rem;
+			padding-bottom 	: 2px;
+		}
+		h2, .h2 {
+			font-size 	: 1.4rem;
+			margin-top 	: 2px;
+		}
+	}
+	/*-----  End of Heading styling  ------*/
+
+
+}
+
+/*-----  End of Header styling  ------*/
+

@@ -1,0 +1,67 @@
+.app-howtouse {
+	.header-wrapper {
+
+		/*
+		height: 740px;
+		background-color: rgba(0, 0, 0, 0);
+		background: linear-gradient(rgba(57, 149, 139, 0.5), rgba(82, 171, 109, 0.6)), url('/images/backgrounds/speaker.png')  no-repeat center center fixed;
+		background-size: cover;
+		*/
+
+		height: 740px;
+		background-color: rgba(57, 149, 139, 1);
+		background-repeat: repeat;
+		//background-image: url('/images/backgrounds/map.png'), linear-gradient(rgba(57, 149, 139, 0.9), rgba(82, 171, 109, 0.8));
+	    background-image: url('/images/backgrounds/speaker.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.home-header {
+			margin-top: 100px;
+		}
+	}
+
+	.content-wrapper {
+		background-color: $white;
+
+		.howtouse_1st {
+			z-index: 102;
+			@media (min-width: 768px) {
+				.demo {
+					margin-top: -100px;
+				}
+			}
+		}
+
+		.howtouse_2nd {
+			z-index: 101;
+		}
+
+		.howtouse_3rd {
+			z-index: 100;
+		}
+
+		.howtouse_4th {
+			z-index: 99;
+			position: relative;
+
+			.usage_left {
+				z-index: 99;
+			}
+
+			.usage_background {
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 98;
+
+			    background-image: url("/images/misc/pc_usage.jpg");
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    background-position: right bottom;
+			}
+		}
+	}
+}

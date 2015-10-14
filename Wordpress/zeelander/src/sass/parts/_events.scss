@@ -1,0 +1,46 @@
+.the_event {
+	position: relative;
+
+	.event-date {
+		width: 60px;
+		background-color: $black;
+		color: $white;
+		padding: 9px 0;
+
+		.event-day, .event-month {
+			display: block;
+		}
+
+		.event-day {
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.event-month {
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 16px;
+			vertical-align: sub;
+		}
+	}
+
+	.event-title, .event-title a  {
+		text-transform: uppercase;
+		color: $darkgrey;
+		font-weight: normal;
+	}
+
+	.event-excerpt {
+		width: auto;
+		font-size: 14px;
+		line-height: 2.2rem;
+		color: $grey;
+
+	}
+
+	.event-link {
+		font-size: 12px;
+		color: $black;
+	}
+}

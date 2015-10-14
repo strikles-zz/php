@@ -1,0 +1,71 @@
+#reporting-container {
+
+	table {
+		width: 100%;
+
+		.header_line {
+			width: 100%;
+
+			.header_description {
+				text-align: left;
+				width: 80%;
+			}
+
+			.col_units {
+				text-align: right;
+				width: 10%;
+			}
+		}
+
+		.service-entry {
+			width: 100%;
+
+			.service-label {
+				text-align: left;
+				width: 80%;
+			}
+
+			.service-occurrences, .service-totalprice {
+				text-align: right;
+				width: 10%;
+			}
+		}
+
+		.worklog-entry {
+			width: 100%;
+
+			.user-label {
+				text-align: left;
+				width: 80%;
+			}
+
+			.user-occurrences, .user-totaltime {
+				text-align: right;
+				width: 10%;
+			}
+		}
+
+		.servicecat-label {
+			text-align: left;
+			width: 80%;
+		}
+
+		.servicecat-totaloccurrences, .servicecat-totalprice {
+			text-align: right;
+			width: 10%;
+			font-weight: bold;
+		}
+
+		.project-totaloccurrences, .project-totalminutes {
+			text-align: right;
+			width: 10%;
+			font-weight: bold;
+		}
+
+		.occurrences_total, .revenue_total, .worklogs_total, .minutes_total {
+			text-align: right;
+			width: 10%;
+			font-weight: bold;
+		}
+	}
+}

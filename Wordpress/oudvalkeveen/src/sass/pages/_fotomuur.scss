@@ -1,0 +1,163 @@
+body.page-template-template-fotomuur {
+	#content {
+
+		.spotlight {
+			position:relative;
+			margin-bottom: 50px;
+			.the-img {
+				background-color: $white;
+				padding: 15px;
+				width:100%;
+				max-width: 225px;
+				@media (max-width: $screen-md) {
+					margin: 0 auto;
+				}
+				img {
+					max-width: 100%;
+					height:auto;
+				}
+			}
+			h4 {
+				position: absolute;
+				top: 0px;
+				right: 15px;
+				margin:0;
+				color: $white;
+				font-size: 1.9rem;
+				text-transform: uppercase;
+				font-family: 'Cubano';
+			}
+			.spotlight-title {
+				color: $white;
+				font-size: 2.9rem;
+				line-height: 2.9rem;
+				margin-top: 1.9rem;
+				text-transform: uppercase;
+				font-family: 'Cubano';
+				margin-bottom: 0.5em;
+				@media (max-width: $screen-md) {
+					padding-top: 30px;
+				}
+			}
+			.spotlight-quote {
+				color: $white;
+			}
+		}
+
+
+		.custom-review {
+			position:relative;
+			overflow: visible;
+			margin: 0 auto;
+			max-width: 350px;
+			padding-bottom: 110px;
+
+			.review-img {
+				background-color: $white;
+				padding: 15px;
+				max-width: 250px;
+				width:65%;
+				height: 180px;
+				overflow:hidden;
+				img {
+					max-width: 100%;
+					height:auto;
+				}
+			}
+
+			&.yellow .review-excerpt { background: $yellow;	}
+			&.blue .review-excerpt { background: $blue; }
+			&.green .review-excerpt { background: $green; }
+			&.pink .review-excerpt { background: $pink; }
+			&.orange .review-excerpt { background: $orange; }
+			&.red .review-excerpt { background: $red; }
+
+			.review-excerpt {
+				position: absolute;
+				left: 60px;
+				right: 0px;
+				top: 135px;
+				padding: 20px 30px;
+				//min-height: 300px;
+				//background: url('../img/fotomuur-description.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+
+				a {
+					color: $white;
+					position: relative;
+					text-transform: uppercase;
+					font-family: 'Cubano';
+					font-size: 18px;
+					padding: 8px 15px 40px 15px;
+					border-radius: 15px 0 15px 15px;
+					min-width: 180px;
+					background-color: $blue;
+					text-align: center;
+					display:block;
+					z-index:1;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+			}
+			.review-title {
+				position: absolute;
+				z-index: 0;
+				right: 0px;
+				width: 115px;
+				top: 26px;
+				color: #fff;
+				font-size: 24px;
+				line-height: 30px;
+				text-transform: uppercase;
+				font-family: 'Cubano';
+				text-shadow: 5px 8px 6px rgba(0, 0, 0, 0.25);
+			}
+			@media (max-width: 767px) {
+
+				.custom-review {
+					padding-bottom: 50px;
+					max-width: none;
+				}
+
+				.review-img{
+					background-color: $white;
+					padding: 5px;
+					height: auto;
+					width:auto;
+					img {
+						max-width: 100%;
+						width: 100%;
+						height: auto;
+					}
+				}
+				.review-excerpt {
+					//font-size: 10px;
+					top:150px;
+					left: 10px;
+					right: 15px;
+					padding: 5px 15px;
+					//min-height:150px;
+
+				}
+				.review-title-xs {
+					font-size: 14px;
+					//right: -30px;
+					//position: absolute;
+					//z-index: 0;
+					//right: 0px;
+					//width: 115px;
+					//top: 26px;
+					color: #0E93C9;
+					//font-size: 24px;
+					line-height: 30px;
+					text-transform: uppercase;
+					font-family: 'Cubano';
+					//text-shadow: 5px 8px 6px rgba(0, 0, 0, 0.25);
+				}
+			}
+		}
+	}
+}

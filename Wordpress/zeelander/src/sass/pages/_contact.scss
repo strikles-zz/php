@@ -1,0 +1,28 @@
+body.page-id-14 {
+
+	h2 {
+		margin-top: 8rem;
+	}
+
+	.acf-map {
+		width: 100%;
+
+		@media (max-width: $screen-sm-min) {
+			height: 300px;
+		}
+
+		@media (min-width: $screen-sm) {
+			height: 500px;
+		}
+
+		.gm-style-iw {
+			padding: 1rem;
+		}
+	}
+
+	#gform_1 {
+	    position: relative;
+	    text-align: center;
+	}
+
+}

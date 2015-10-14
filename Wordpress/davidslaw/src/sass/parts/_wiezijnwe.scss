@@ -1,0 +1,207 @@
+/*============================================
+=            Wie zijn we styling             =
+============================================*/
+
+body .wie-zijn-we {
+
+	.employees-container {
+		position:relative;
+		opacity: 0;
+
+		.employee {
+
+			.employee-content {
+				margin-bottom: 50px;
+				margin-top: 50px;
+
+				.employee-name {
+					color: $blue;
+					font-size: 2.6rem;
+					text-transform: uppercase;
+					margin-bottom: 0px;
+				}
+				.employee-function {
+					color: #8fa7bb;
+					font-size: 1.8rem;
+					text-transform: uppercase;
+					margin-bottom: 25px;
+				}
+				.employee-description {
+					p {
+						font-size: 1.3rem;
+						margin-bottom: 25px;
+					}
+				}
+				.employee-contact {
+					color: #969696;
+					font-size: 1.3rem;
+
+					@media (max-width: $screen-xs) {
+
+						color: #444;
+					}
+				}
+			}
+		}
+
+		.employee-background {
+			opacity:0;
+
+			@media (max-width: $screen-sm) {
+				opacity: 1!important;
+			}
+
+			.employee {
+
+				.employee-thumb-container {
+					background-color: #c7c7c7;
+
+
+					.employee-thumb {
+						padding: 0;
+
+						img {
+							width: 100%;
+						}
+
+						.employee-thumb-contact {
+							color: #fff;
+
+							.thumb-contact-pad {
+
+								@media (max-width: 500px) {
+									padding-top: 25px;
+									font-size: 1.4rem;
+								}
+
+								@media (min-width: 501px) and (max-width: 767px) {
+									padding-top: 50px;
+									font-size: 1.5rem;
+								}
+
+								@media (min-width: 768px) and (max-width: $screen-lg) {
+									padding-top: 50px;
+									padding-bottom: 50px;
+									padding-left: 30px;
+									font-size: 1.0rem;
+								}
+
+								@media (min-width: $screen-lg) {
+									padding-top: 50px;
+									padding-bottom: 50px;
+									padding-left: 50px;
+									font-size: 1.5rem;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.employee > .row {
+				position: relative;
+			}
+		}
+	}
+
+	.employee-list-container {
+		background-color: $brown;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 45px;
+
+		@media (max-width: 768px) {
+			padding-left: 15px;
+		}
+
+		@media (min-width: 768px) and (max-width: 1024px) {
+
+			.list-background {
+				background: $brown;
+				display: block;
+				position: absolute;
+				right: -2000%;
+				left: 0;
+				height: 100%;
+				top: 0;
+
+				padding-left: 15px;
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+		}
+
+		.employee-list {
+
+			@media (max-width: $screen-xs) {
+				padding: 0 20px 0 0;
+			}
+
+			.title {
+				color: $white;
+				font-size: 2.4rem;
+				text-transform: uppercase;
+			}
+
+			a {
+				color: #000;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				@media (max-width: 768px) {
+					line-height: 30px;
+				}
+			}
+
+			a.active {
+				color: #fff;
+			}
+		}
+	}
+
+	.employee-thumbnails {
+		margin-top:50px;
+		margin-bottom:50px;
+		padding: 0 15px;
+
+		@media (max-width: $screen-xs) {
+			margin-bottom:30px;
+			padding: 0 20px 0 0;
+		}
+
+		.title {
+			color: $white;
+			font-size: 2.6rem;
+			text-transform: uppercase;
+		}
+
+		.employee-thumbnail-container {
+			cursor:pointer;
+			cursor:hand;
+			margin-bottom: 30px;
+			background-size: cover!important;
+
+			&.active {
+				background-color: #89A8B8 !important;
+				background-blend-mode: multiply;
+			}
+
+			@media (max-width: $screen-xs) {
+				margin-right: -20px;
+			}
+
+			img {
+				opacity:1;
+
+				-webkit-transition: opacity .15s ease-in-out;
+				-moz-transition: opacity .15s ease-in-out;
+				-ms-transition: opacity .15s ease-in-out;
+				-o-transition: opacity .15s ease-in-out;
+				transition: opacity .15s ease-in-out;
+			}
+		}
+	}
+}
+
+/*-----  End of Wie zijn we styling   ------*/
+

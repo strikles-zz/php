@@ -1,0 +1,329 @@
+.app-dashboard {
+
+    @media(min-width: 768px) {
+        .header-wrapper {
+            height: 200px !important;
+            background-color: rgba(57, 149, 139, 1);
+            background: linear-gradient(rgba(57, 149, 139, 0.8), rgba(82, 171, 109, 0.9)), url('/images/backgrounds/texture.png') repeat;
+
+            .home-header {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right:0;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    @media(max-width: 768px) {
+        .header-wrapper {
+            height: 300px !important;
+            background-color: rgba(57, 149, 139, 1);
+            background: linear-gradient(rgba(57, 149, 139, 0.8), rgba(82, 171, 109, 0.9)), url('/images/backgrounds/texture.png') repeat;
+
+            .home-header {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right:0;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .dashboard-header {
+
+        .dashboard-header-left .dashboard-user-details-header {
+            text-align: left;
+        }
+
+        @media(max-width: 768px) {
+            .dashboard-header-center {
+                margin-top: 2rem;
+            }
+        }
+
+        .dashboard-header-center {
+
+            input {
+                border: 0;
+                border-radius: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+                color: $white;
+                height: auto !important;
+
+                &::focus {
+                    outline:none;
+                }
+            }
+
+            button {
+                border: 0;
+                border-radius: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+                color: $white;
+            }
+
+            .dashboard-search {
+                background-color: $black;
+            }
+        }
+
+        .dashboard-header-right {
+
+            a {
+                color: $white;
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    .dashboard {
+        margin-top: 3rem;
+
+        .dashboard-groups {
+
+            .dashboard-groups-header {
+                font-size: 1.6rem;
+
+                .create-group {
+                    text-decoration: none;
+                    color: $black;
+                    display: block;
+
+                    span {
+                        color: $green;
+                    }
+                }
+            }
+
+            .dashboard-groups-entries {
+                margin-top: 30px;
+
+                .dashboard-groups-entry {
+                    background: $white;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 0 1px 1px $light-gray;
+                    padding: 15px;
+                    position: relative;
+
+                    .dashboard-groups-entry-name {
+                        font-weight: bold;
+                    }
+
+                    .dashboard-groups-entry-cat {
+                        color: $green;
+                    }
+
+                    .dashboard-groups-entry-details {
+
+                        .dashboard-groups-entry-location {
+                            color: $gray;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .next-meeting {
+                        border-top: 1px solid $green;
+                        font-size: 1.2rem;
+                    }
+
+                    .dashboard-groups-entry-time {
+                        color: $gray;
+                        font-size: 24px;
+                    }
+
+                    .dashboard-groups-entry-time-labels {
+                        color: $gray;
+                        font-size: 1.2rem;
+                    }
+
+                }
+            }
+        }
+
+        .dashboard-activities {
+
+            .dashboard-activities-header {
+                font-size: 1.6rem;
+
+                .see-all {
+                    color: $gray;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .dashboard-activities-entries {
+                margin-top: 30px;
+
+                &.border-left {
+                    border-left: 1px solid $green;
+                }
+
+                .dashboard-activities-entry-container {
+                    position: relative;
+
+                    &:before {
+                        font-family: FontAwesome;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-size: 14px;
+                        position: absolute;
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        background: $green;
+                        left: -10px;
+                        top: 23px;
+                        content: '\f03d';
+                        color: $white;
+                        text-decoration: inherit;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+
+                    .dashboard-activities-entry {
+                        background: $white;
+                        margin-left: 30px;
+                        margin-bottom: 1rem;
+                        box-shadow: 0 0 1px 1px $light-gray;
+                        position: relative;
+                        padding: 15px;
+                        z-index: 2;
+
+                        .left-triangle {
+                            position: absolute;
+                            display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                            left: 0;
+                            top: 0;
+                            z-index: 1;
+                            color: $black;
+
+                            &:after {
+                               content: "";
+                               position: absolute;
+                               width: 15px;
+                               height: 15px;
+                               background: $white;
+                               transform: rotate(45deg);
+                               top: 23px;
+                               left: -8px;
+                               border-bottom: 1px solid $light-gray;
+                               border-left: 1px solid $light-gray;
+                            }
+
+                        }
+
+                        .dashboard-activities-entry-title {
+                            font-size: 1.2rem;
+
+                            .activities-verb {
+                                color: $green;
+                            }
+                        }
+
+                        .dashboard-activities-entry-details {
+                            font-size: 1.2rem;
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dashboard-upcoming {
+
+            .dashboard-upcoming-header {
+                font-size: 1.6rem;
+
+                .see-all {
+                    color: $gray;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .dashboard-upcoming-large {
+                margin-top: 30px;
+                box-shadow: 0 0 1px 1px $light-gray;
+                padding: 15px;
+
+                .dashboard-upcoming-large-title {
+                    font-size: 12px;
+                }
+
+                .dashboard-upcoming-large-details {
+                    font-size: 12px;
+                    color: $gray;
+                }
+
+                .dashboard-upcoming-large-time {
+                    color: $gray;
+                    font-size: 24px;
+                }
+
+                .dashboard-upcoming-large-time-labels {
+                    color: $gray;
+                }
+            }
+
+            .dashboard-upcoming-entries {
+                margin-top: 30px;
+
+                .dashboard-upcoming-entry {
+                    margin-top: 1rem;
+                    box-shadow: 0 0 1px 1px $light-gray;
+                    padding: 15px;
+
+                    .dashboard-upcoming-entry-title {
+                        font-size: 12px;
+                    }
+
+                    .dashboard-upcoming-entry-details {
+                        color: $gray;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .dashboard-pending {
+            margin-top: 30px;
+
+            .dashboard-pending-header {
+                font-size: 1.6rem;
+                height: 50px;
+                line-height: 50px;
+                color: $black;
+
+                span {
+                    padding-left: 1rem;
+                }
+            }
+
+            .dashboard-pending-entries {
+                margin-top: 1.6rem;
+
+                .dashboard-pending-entry {
+                    margin-top: 1rem;
+                    box-shadow: 0 0 1px 1px $light-gray;
+                    padding: 15px;
+
+                    .dashboard-pending-entry-title {
+                        font-size: 12px;
+                    }
+
+                    .dashboard-pending-entry-details {
+                        color: $gray;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

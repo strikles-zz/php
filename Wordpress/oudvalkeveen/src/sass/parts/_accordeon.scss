@@ -1,0 +1,19 @@
+body {
+	.wpb_accordion_wrapper {
+		h3.wpb_accordion_header {
+			background: transparent!important;
+			border-bottom: 1px solid #333;
+			a {
+				color: #333;
+			}
+			span {
+				display:none!important;
+			}
+		}
+		.wpb_accordion_content .wpb_content_element {
+			background-color: $darkyellow;
+			padding: 15px;
+
+		}
+	}
+}

@@ -1,0 +1,94 @@
+/*=============================
+=            Fonts            =
+=============================*/
+
+	/*==========  Font-Faces  ==========*/
+
+	//Roboto
+	@font-face {
+		font-family : 'Roboto';
+		font-style 	: normal;
+		font-weight : 100;
+		src 		: local('Roboto Light'), local('Roboto-Light'), url(../fonts/roboto/Roboto-Light.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'Roboto';
+		font-style 	: normal;
+		font-weight : 400;
+		src 		: local('Roboto Regular'), local('Roboto-Regular'), url(../fonts/roboto/Roboto-Regular.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'Roboto';
+		font-style 	: italic;
+		font-weight : 400;
+		src 		: local('Roboto Italic'), local('Roboto-Italic'), url(../fonts/roboto/Roboto-Italic.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'Roboto';
+		font-style 	: normal;
+		font-weight : 700;
+		src 		: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/roboto/Roboto-Bold.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'Roboto';
+		font-style  : normal;
+		font-weight : 900;
+		src 		: local('Roboto Black'), local('Roboto-Black'), url(../fonts/roboto/Roboto-Black.ttf) format('truetype');
+	}
+
+
+	//RobotoCondensed
+	@font-face {
+		font-family : 'RobotoCondensed';
+		font-style 	: normal;
+		font-weight : 100;
+		src 		: local('RobotoCondensed Light'), local('RobotoCondensed-Light'), url(../fonts/robotocondensed/RobotoCondensed-Light.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'RobotoCondensed';
+		font-style 	: normal;
+		font-weight : 400;
+		src 		: local('RobotoCondensed Regular'), local('RobotoCondensed-Regular'), url(../fonts/robotocondensed/RobotoCondensed-Regular.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'RobotoCondensed';
+		font-style 	: italic;
+		font-weight : 400;
+		src 		: local('RobotoCondensed Italic'), local('RobotoCondensed-Italic'), url(../fonts/robotocondensed/RobotoCondensed-Italic.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'RobotoCondensed';
+		font-style 	: normal;
+		font-weight : 700;
+		src 		: local('RobotoCondensed Bold'), local('RobotoCondensed-Bold'), url(../fonts/robotocondensed/RobotoCondensed-Bold.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family : 'RobotoCondensed';
+		font-style  : normal;
+		font-weight : 900;
+		src 		: local('RobotoCondensed Black'), local('RobotoCondensed-Black'), url(../fonts/robotocondensed/RobotoCondensed-Black.ttf) format('truetype');
+	}
+
+	/*==========  Apply fonts globally ==========*/
+
+	header {
+		font-family: 'RobotoCondensed';
+	}
+
+	body {
+		font-family: 'Roboto';
+	}
+
+	footer {
+		font-family: 'RobotoCondensed';
+	}
+
+/*-----  End of Fonts  ------*/

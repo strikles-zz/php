@@ -1,0 +1,30 @@
+.twitter-typeahead {
+
+	input.typeahead {
+		background: $wit!important;
+	}
+
+	&.block {
+		display:block!important;
+	}
+}
+
+.typeahead-results-container {
+	position: absolute;
+}
+
+.tt-dropdown-menu {
+	position: absolute;
+	margin-top: 3rem;
+	min-width: 100%;
+}
+
+.tt-suggestions {
+
+	a {
+		text-transform: none;
+		font-size: 1.4rem;
+		font-family: "Robota Condensed", arial, sans-serif;
+		font-weight: 300;
+	}
+}
