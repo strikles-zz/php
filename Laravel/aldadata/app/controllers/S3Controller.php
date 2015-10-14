@@ -26,8 +26,8 @@ class S3Controller {
                 "expiration" => date('Y-m-d\TH:i:s.000\Z', strtotime('+1 day')),
                 "conditions" => array(
                         array("bucket" => $this->bucket),
-                        array("acl" => "public-read"), // instead of public-read (Jasper)
-                        array("success_action_status" => "201"), // fix by Jasper
+                        array("acl" => "public-read"),
+                        array("success_action_status" => "201"),
                         array("starts-with", '$key', "files/"),
                         array("starts-with", '$Content-Type', ""),
                         array("starts-with", '$name', ""),
@@ -38,7 +38,7 @@ class S3Controller {
         // sign policy
         $this->signature = base64_encode(hash_hmac("sha1", $this->policy, $this->secret, true));
 
-        mail('andre@eenvoudmedia.nl', 'Andre', "S- ".$this->signature." -P- ".$this->policy);
+        mail('your@email.com', 'Your Name', "S- ".$this->signature." -P- ".$this->policy);
 
         return true;
     }
